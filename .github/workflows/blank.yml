@@ -27,7 +27,7 @@ jobs:
         run: |
           cd build
           git init
-          git config --global user.email ${{EMAIL}}
+          git config --global user.email ${{GITHUBEMAIL}}
           git config --global user.name ${{GITHUBNAME}}
           git status
           git remote add origin https://${{secrets.TOKEN_CODE}}@github.com/gtrrpc2001/portfolio.git          
