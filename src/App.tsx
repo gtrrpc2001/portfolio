@@ -1,12 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux';
+import { Navigate, Route, Router, Routes } from 'react-router-dom';
+import { Home } from './mainHome/Home';
 
 function App() {
   return (
-    <div>
-      <h2>protfolio</h2>
-    </div>
+    // <Provider store={}>
+      <Routes>
+        <Route path='/' element={<Home/>}>
+          
+        </Route>
+        <Route path='*' element={<Navigate to={'/'}/>}/>
+      </Routes>
+    // </Provider>    
   );
 }
 
