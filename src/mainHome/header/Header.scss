@@ -1,0 +1,14 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 10%;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+
+.menuIcon{
+    cursor: pointer;
+}
