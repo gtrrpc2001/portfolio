@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Provider } from 'react-redux';
-import { Navigate, Route, Router, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { Home } from './mainHome/Home';
 import { store } from './store/store';
 
