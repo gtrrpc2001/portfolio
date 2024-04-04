@@ -19,7 +19,7 @@ export const Home = () => {
 
     useEffect(()=>{
         widthPatch(Width(width))    
-    },[width])
+    },[width,widthPatch])
 
     return (
         <Layout>
