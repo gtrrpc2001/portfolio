@@ -18,7 +18,7 @@ export const Header = () => {
 
     useEffect(()=>{
         widthHandler()
-    },[width])    
+    },[width,widthHandler])    
 
     return (
         <header className='header'>
