@@ -6,7 +6,7 @@ import { Width } from "../store/reducers"
 
 export const Home = () => {
     const [width,setWidth] = useState<number>(window.innerWidth)
-    const widthPatch = useDispatch(0)
+    const widthPatch = useDispatch()
 
     const resizeHandler = () => {
         setWidth(window.innerWidth)
