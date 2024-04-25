@@ -35,7 +35,7 @@ export const Main = () => {
                                 ABOUT ME
                             </div>
                             <div className='section_title_link_wrapper'>
-                                <img className='section_title_link' src={link}/>
+                                <img className='section_title_link' src={link} alt='title_img'/>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export const Main = () => {
                         <div className='aboutme_basic_info_wrapper'>
                             <div className='aboutme_basic_info_wrapper_'>
                                 <div className='aboutme_basic_info_wrapper__'>
-                                    <img className='aboutme_basic_info_img' src={person}/>
+                                    <img className='aboutme_basic_info_img' src={person} alt='aboutme_info_img'/>
                                 </div>
                                 <div className='aboutme_basic_info_text'>
                                     <div className='aboutme_basic_info_text_label'>
@@ -56,7 +56,7 @@ export const Main = () => {
                             </div>
                             <div className='aboutme_basic_info_wrapper_'>
                                 <div className='aboutme_basic_info_wrapper__'>
-                                    <img className='aboutme_basic_info_img' src={calendar}/>
+                                    <img className='aboutme_basic_info_img' src={calendar} alt='aboutme_info_img'/>
                                 </div>
                                 <div className='aboutme_basic_info_text'>
                                     <div className='aboutme_basic_info_text_label'>
@@ -69,7 +69,7 @@ export const Main = () => {
                             </div>
                             <div className='aboutme_basic_info_wrapper_'>
                                 <div className='aboutme_basic_info_wrapper__'>
-                                    <img className='aboutme_basic_info_img' src={envelope}/>
+                                    <img className='aboutme_basic_info_img' src={envelope} alt='aboutme_info_img'/>
                                 </div>
                                 <div className='aboutme_basic_info_text'>
                                     <div className='aboutme_basic_info_text_label'>
@@ -82,7 +82,7 @@ export const Main = () => {
                             </div>
                             <div className='aboutme_basic_info_wrapper_'>
                                 <div className='aboutme_basic_info_wrapper__'>
-                                    <img className='aboutme_basic_info_img' src={geo}/>
+                                    <img className='aboutme_basic_info_img' src={geo} alt='aboutme_info_img'/>
                                 </div>
                                 <div className='aboutme_basic_info_text'>
                                     <div className='aboutme_basic_info_text_label'>
@@ -95,7 +95,7 @@ export const Main = () => {
                             </div>
                             <div className='aboutme_basic_info_wrapper_'>
                                 <div className='aboutme_basic_info_wrapper__'>
-                                    <img className='aboutme_basic_info_img' src={telephone}/>
+                                    <img className='aboutme_basic_info_img' src={telephone} alt='aboutme_info_img'/>
                                 </div>
                                 <div className='aboutme_basic_info_text'>
                                     <div className='aboutme_basic_info_text_label'>
@@ -108,7 +108,7 @@ export const Main = () => {
                             </div>
                             <div className='aboutme_basic_info_wrapper_'>
                                 <div className='aboutme_basic_info_wrapper__'>
-                                    <img className='aboutme_basic_info_img' src={pencil}/>
+                                    <img className='aboutme_basic_info_img' src={pencil} alt='aboutme_info_img'/>
                                 </div>
                                 <div className='aboutme_basic_info_text'>
                                     <div className='aboutme_basic_info_text_label'>

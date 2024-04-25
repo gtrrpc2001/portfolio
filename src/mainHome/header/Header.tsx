@@ -24,7 +24,7 @@ export const Header = () => {
             ) : (
                 <div className='header_content'>
                     <div className='header_title'>
-                        <img className='header_img' src={link}/>
+                        <img className='header_img' src={link} alt='header_img'/>
                         Portfolio
                     </div>
                     <div className='header_menu'>
