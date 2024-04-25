@@ -1,12 +1,62 @@
-.header{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    height: 10%;
+@mixin custom-text-style{
+    display: inline-block;
+    font-weight: 700;    
+    color: hsla(0, 0%, 100%, .7);
+    line-height: 2rem;
+    cursor: pointer;    
+}
+
+$hoverColor:white;
+
+.header{            
+    position: fixed;    
     z-index: 100;
+    right: 0;
     left: 0;
     top: 0;
+    background-color: transparent;
+}
+
+header{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.header_content{
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    max-width: 71.25rem;
+    height: 4.5rem;
+    padding: 1.25rem 2rem;
+    margin: 0 auto;
+}
+
+.header_title {
+    @include custom-text-style();
+    font-size: 1.5rem;
+}
+
+.header_title:hover{
+    color: $hoverColor;
+}
+
+.header_menu_item:hover{
+    color: $hoverColor;
+}
+
+.header_menu_item{
+    @include custom-text-style();
+    font-size: 1.0rem;
+    padding: 0 1rem;
+}
+
+.header_menu{
+    float: right;
+}
+
+.header_img{
+    height: 25px;
+    margin-right: 1.0rem;
 }
 
 .menuIcon{

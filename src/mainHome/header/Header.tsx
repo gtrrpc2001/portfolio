@@ -4,6 +4,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
+import link from '../../assets/image/white-link.png'
 
 export const Header = () => {
     const [menuVisible,setMenuVisible] = useState<boolean>(false)
@@ -21,7 +22,19 @@ export const Header = () => {
             {menuVisible ? (
                 <FontAwesomeIcon className='menuIcon' icon={faBars} size='2x'/>
             ) : (
-                <h2>protfolio</h2>
+                <div className='header_content'>
+                    <div className='header_title'>
+                        <img className='header_img' src={link}/>
+                        Portfolio
+                    </div>
+                    <div className='header_menu'>
+                        <div className='header_menu_item'>About me</div>
+                        <div className='header_menu_item'>Skills</div>
+                        <div className='header_menu_item'>Archiving</div>
+                        <div className='header_menu_item'>Projects</div>
+                        <div className='header_menu_item'>Career</div>
+                    </div>
+                </div>
             )}
         </header>
     );
