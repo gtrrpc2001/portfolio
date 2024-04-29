@@ -1,0 +1,18 @@
+$imagSize:2rem;
+$fontWeight:400;
+
+.aboutme_section_title{
+    display: table;
+    position: relative;
+    margin: 0 auto 3rem;
+}
+
+.section_title_text{
+    color: #000000;
+    border-bottom-color: #838282;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;    
+    font-weight: $fontWeight;
+    font-size: 3rem;
+    line-height: 1.5;
+}

@@ -1,0 +1,35 @@
+$width:100%;
+$fontWeight:400;
+$imagSize:2rem;
+
+.aboutme_basic_info_wrapper_{
+    display: flex;
+    flex-flow: row nowrap;
+    width: $width;
+    max-width: 17rem;    
+    opacity: .8;
+    margin-left: 4.5rem;   
+}
+
+.aboutme_basic_info_wrapper__{
+    width: $imagSize;
+    min-width: $imagSize;
+    height: $imagSize;
+    margin-top: .2rem;
+    margin-right: 2rem;
+}
+
+.aboutme_basic_info_img{
+    width: $width;
+}
+
+.aboutme_basic_info_text_label{
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.aboutme_basic_info_text_name{
+    font-weight: $fontWeight;
+    font-size: 1rem;
+}

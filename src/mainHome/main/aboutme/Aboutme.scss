@@ -1,0 +1,37 @@
+$width:100%;
+$fontWeight:400;
+$imagSize:2rem;
+
+.aboutme_article_content{
+    -webkit-box-sizing: border-box;
+    width: $width;
+    max-width: 71.25rem;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+}
+
+.aboutme_basic_info{
+    margin-bottom: 2rem;
+    width: $width;
+}
+
+.aboutme_basic_info_wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    -webkit-box-pack: justify;    
+    width: $width;
+}
+
+
+
+#up{
+    margin-bottom: 4rem;
+}
+
+
+
+
+
+
+

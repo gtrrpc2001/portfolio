@@ -1,0 +1,16 @@
+$imagSize:2rem;
+
+.section_title_link_wrapper .section_title_link{
+    position: absolute;
+    top: 50%;
+    left: -3rem;
+    -webkit-transform: translateY(-50%);
+    width: $imagSize;   
+    height: $imagSize;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.section_title_link:hover{
+    opacity: .7;
+}
