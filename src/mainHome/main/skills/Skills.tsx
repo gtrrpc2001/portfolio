@@ -12,7 +12,7 @@ export const Skills = () => {
                             <div className='skill_container_title'>
 
                             </div>
-                            <img className='skill_container_img' src='' />
+                            <img className='skill_container_img' src='' alt='skill'/>
                         </div> 
                     </div>
                 </div>
