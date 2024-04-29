@@ -1,3 +1,4 @@
+$box-size: border-box;
 .skill_article{
     background-color: #f9c51d;    
 }
@@ -8,7 +9,7 @@
     padding: 4rem 2rem;
     margin: 0 auto;
     height: 93rem;
-    -webkit-box-sizing: border-box;
+    -webkit-box-sizing: $box-size;
 }
 
 .skill_basic_info{
@@ -16,4 +17,29 @@
     flex-flow: column wrap;
     align-content: space-around;
     height: calc(100% - (7.5rem + 1px));
+}
+
+.skill_container{
+    -webkit-box-sizing: $box-size;
+    flex-shrink: 0;
+    width: 17rem;
+    padding: 1.5rem;
+    margin: 0 auto 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2)
+}
+
+.skill_container_title{
+    padding-bottom: 5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #f4623a;
+}
+
+.skill_container_img{
+    display: block;
+    width: 100%;
 }
