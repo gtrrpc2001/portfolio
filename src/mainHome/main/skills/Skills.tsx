@@ -9,7 +9,7 @@ export const Skills = () => {
 
     const ContainerList = () => {
         const titles:string[] = SkillTitleList
-        return titles.map((t,index) => index != (titles.length - 1) ? getContainer(t) : getContainer(t,true))        
+        return titles.map((t,index) => index !== (titles.length - 1) ? getContainer(t) : getContainer(t,true))        
     }
 
     return (

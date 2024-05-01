@@ -12,7 +12,7 @@ export const Container = ({title,images,last=false}:Props) => {
 
     const skill_Image = () => {        
        return images.map((d,index) =>{
-               return index != (images.length - 1) ? (<Skillimg src={d.src} alt={d.alt} text={d.text}/>) : 
+               return index !== (images.length - 1) ? (<Skillimg src={d.src} alt={d.alt} text={d.text}/>) : 
                (<Skillimg src={d.src} alt={d.alt} text={d.text} last={true}/>)
             } 
         )
