@@ -1,0 +1,19 @@
+.skill_container_img_box{
+    display: flex;
+    align-items: center;    
+    justify-content: start;
+    &.bottom{
+        margin-bottom: 2rem;
+    }
+}
+
+.img{
+    width: 50%;
+    height: 5rem;
+}
+
+.img_text{
+    /*font-style: ;*/
+    font-weight: 400;
+    font-size: x-large;
+}
