@@ -9,9 +9,12 @@ type Props = {
 
 export const Skillimg = ({src,alt,text,last=false}:Props) => {
 
+    const img_ClassName = `img ${text == '' ? 'img_size' : ''}`
+
+
     return (
         <div className={`skill_container_img_box ${!last ? 'bottom' : ''}`}>
-            <img className='img' src={src} alt={alt}/>                                
+            <img className={img_ClassName} src={src} alt={alt}/>                                
             <text className='img_text'>
             {text}
             </text>

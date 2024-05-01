@@ -35,7 +35,7 @@ export const Header = () => {
     const itemClassName = `header_menu_item ${isScrolled ? 'scroll' : ''}`
 
     return (
-        <header className='header'>
+        <header className={`header ${isScrolled ? 'scroll' : ''}`}>
             {menuVisible ? (
                 <FontAwesomeIcon className='menuIcon' icon={faBars} size='2x'/>
             ) : (

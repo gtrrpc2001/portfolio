@@ -16,8 +16,12 @@ $hoverColor:white;
     z-index: 100;
     right: 0;
     left: 0;
-    top: 0;
+    top: 0;    
     background-color: transparent;
+    &.scroll{
+        background-color:#fff;
+        box-shadow: 0 1px .3rem hsla(0, 0%, 80%, .8);
+    }
 }
 
 header{
@@ -41,10 +45,16 @@ header{
 
 .header_title:hover{
     color: $hoverColor;
+    &.scroll{
+        color: #696867;
+    }
 }
 
 .header_menu_item:hover{
     color: $hoverColor;
+    &.scroll{
+        color: #696867;
+    }
 }
 
 .header_menu_item{

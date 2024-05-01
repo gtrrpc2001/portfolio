@@ -10,6 +10,9 @@
 .img{
     width: 50%;
     height: 5rem;
+    &.img_size{
+        // width: 10rem;
+    }
 }
 
 .img_text{
@@ -17,3 +20,4 @@
     font-weight: 400;
     font-size: x-large;
 }
+

@@ -69,17 +69,17 @@ export interface imagesType{
 }
 
 export const WebImageList:imagesType[] = [
+    {src:ts,alt:'WEB',text:''},
+    {src:sass,alt:'WEB',text:''},
     {src:html,alt:'WEB',text:'HTML'},
-    {src:css,alt:'WEB',text:'CSS'},
+    {src:css,alt:'WEB',text:'CSS'},    
     {src:react,alt:'WEB',text:'REACT'},
     {src:redux,alt:'WEB',text:'REDUX'},
     {src:router,alt:'WEB',text:'ROUTER'},
     {src:stylecpm,alt:'WEB',text:'Styled'},
     {src:tcss,alt:'WEB',text:'TWCSS'},
-    {src:mui,alt:'WEB',text:'MUI'},
-    {src:sass,alt:'WEB',text:''},
-    {src:emotion,alt:'WEB',text:'EMOTION'},
-    {src:ts,alt:'WEB',text:''},
+    {src:mui,alt:'WEB',text:'MUI'},    
+    {src:emotion,alt:'WEB',text:'EMOTION'},    
 ]
 
 export const AppImageList:imagesType[] = [
@@ -91,17 +91,17 @@ export const AppImageList:imagesType[] = [
 ]
 
 export const BackendImageList:imagesType[] = [
-    {src:express,alt:'Backend',text:'EXPRESS'},
-    {src:firebase,alt:'Backend',text:'FIREBASE'},
     {src:js,alt:'Backend',text:''},
-    {src:nest,alt:'Backend',text:'NEST'},
-    {src:node,alt:'Backend',text:'NODE'},
     {src:bts,alt:'Backend',text:''},
+    {src:swagger,alt:'Backend',text:''},
+    {src:express,alt:'Backend',text:'EXPRESS'},
+    {src:firebase,alt:'Backend',text:'FIREBASE'},    
+    {src:nest,alt:'Backend',text:'NEST'},
+    {src:node,alt:'Backend',text:'NODE'},    
     {src:jwt,alt:'Backend',text:'JWT'},
     {src:mongoose,alt:'Backend',text:'MONGOOSE'},
     {src:msa,alt:'Backend',text:'MSA'},
-    {src:socket,alt:'Backend',text:'SOCKET'},
-    {src:swagger,alt:'Backend',text:''},
+    {src:socket,alt:'Backend',text:'SOCKET'},    
 ]
 
 export const CloudImageList:imagesType[] = [
