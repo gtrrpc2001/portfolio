@@ -9,7 +9,7 @@ type Props = {
 
 export const Skillimg = ({src,alt,text,last=false}:Props) => {
 
-    const img_ClassName = `img ${text == '' ? 'img_size' : ''}`
+    const img_ClassName = `img ${text === '' ? 'img_size' : ''}`
 
 
     return (
