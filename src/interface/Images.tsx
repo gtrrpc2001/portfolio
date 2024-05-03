@@ -16,7 +16,6 @@ import java from '../assets/app/Java-Dark.svg';
 import kotlin from '../assets/app/Kotlin-Dark.svg';
 import express from '../assets/backend/ExpressJS-Dark.svg';
 import firebase from '../assets/backend/Firebase-Dark.svg';
-import js from '../assets/backend/JavaScript.svg';
 import nest from '../assets/backend/NestJS-Dark.svg';
 import node from '../assets/backend/NodeJS-Dark.svg';
 import bts from '../assets/backend/TypeScript.svg';
