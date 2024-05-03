@@ -7,7 +7,7 @@ type Props = {
 
 }
 
-export const Archiving = ({}:Props) => {
+export const Archiving = () => {
     return (
         <article className='archiving'>
             <div className='archiving_content'>
@@ -20,7 +20,7 @@ export const Archiving = ({}:Props) => {
                 <div className='archiving_content_show'>
                     <a className='archiving_content_github' href='https://github.com/gtrrpc2001'>
                         <div className='archiving_img_wrapper'>
-                            <img className='archiving_img' src={github}/>
+                            <img className='archiving_img' src={github} alt='archiving_github'/>
                         </div>
                         <div className='archiving_url'>
                             github.com/gtrrpc2001
