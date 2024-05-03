@@ -3,9 +3,9 @@ import link from '../../../assets/image/white-link.png';
 import github from '../../../assets/image/git-hub.png';
 import './Archiving.scss'
 
-type Props = {
+// type Props = {
 
-}
+// }
 
 export const Archiving = () => {
     return (
