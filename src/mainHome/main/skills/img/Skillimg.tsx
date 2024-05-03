@@ -14,7 +14,9 @@ export const Skillimg = ({src,alt,text,last=false}:Props) => {
 
     return (
         <div className={`skill_container_img_box ${!last ? 'bottom' : ''}`}>
-            <img className={img_ClassName} src={src} alt={alt}/>                                
+            <div className='skill_container_img_wapper'>
+                <img className={img_ClassName} src={src} alt={alt}/>                                
+            </div>
             <text className='img_text'>
             {text}
             </text>

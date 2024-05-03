@@ -3,20 +3,28 @@
     align-items: center;    
     justify-content: start;
     &.bottom{
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 }
 
-.img{
+.skill_container_img_wapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
     width: 50%;
+}
+
+.img{
+     width: 90%;    
     height: 5rem;
     &.img_size{
-        // width: 10rem;
+        width: 11rem;
     }
 }
 
 .img_text{
     /*font-style: ;*/
+    width: 50%;
     font-weight: 400;
     font-size: x-large;
 }

@@ -42,16 +42,16 @@ const getContainer = (title:string,last:boolean=false) => {
         case "DB":
             images = DbImageList
             break;
-        case "DATA PIPELINE":
+        case "Pipeline":
             images = PipelineImageList
             break;
         case "COMMUNITY":
             images = CommunicationImageList
             break;
-        case "DATA ANALYSIS":
+        case "Analysis":
             images = AnalysisImageList
             break;
-        case "DATA MONITORING":
+        case "Monitoring":
             images = MonitoringImageList
             break;
         case "DEPLOY":
@@ -63,10 +63,10 @@ const getContainer = (title:string,last:boolean=false) => {
         case "SOFTWARE":
             images = SoftwareImageList
             break;
-        case "TEST TOOL":
+        case "Test Tool":
             images = TestImageList
             break;
-        case "VERSION CONTROL":
+        case "Version Control":
             images = VersionImageList
             break;
                                     

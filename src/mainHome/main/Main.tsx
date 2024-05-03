@@ -1,5 +1,6 @@
 import './Main.scss'
 import { Aboutme } from './aboutme/Aboutme';
+import { Archiving } from './archiving/Archiving';
 import { Head } from './head/Head';
 import { Skills } from './skills/Skills';
 
@@ -9,7 +10,8 @@ export const Main = () => {
         <main className="main">            
             <Head/>
             <Aboutme/>
-            <Skills/>                     
+            <Skills/>
+            <Archiving/>                   
         </main>
     );
 }

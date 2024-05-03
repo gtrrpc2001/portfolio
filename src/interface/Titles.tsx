@@ -1,4 +1,4 @@
 export const SkillTitleList:string[] = [
-    'WEB','BACKEND','APP','DATA PIPELINE','DB','DATA MONITORING','DEPLOY','CLOUD','COMMUNITY','DATA ANALYSIS',
-    'OS','SOFTWARE','TEST TOOL','VERSION CONTROL'
+    'WEB','BACKEND','APP','Pipeline','DB','Monitoring','DEPLOY','CLOUD','COMMUNITY','Analysis',
+    'OS','SOFTWARE','Test Tool','Version Control'
 ]

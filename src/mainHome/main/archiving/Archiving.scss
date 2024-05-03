@@ -1,0 +1,59 @@
+$webkit: border-box;
+
+.archiving{
+    background-color: #222;
+}
+
+.archiving_content{
+    -webkit-box-sizing: $webkit;
+    width: 100%;
+    max-width: 71.25rem;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+}
+
+.section_title{
+    display: table;
+    position: relative;
+    margin: 0 auto 3rem;
+}
+
+.section_title_text{
+    color:#ffffff;
+    border-bottom-color:#6c757d
+}
+
+.archiving_content_show{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.archiving_content_github{
+    -webkit-box-sizing: $webkit;
+    width: 26rem;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.archiving_img_wrapper{
+    display: block;
+    width: 12rem;
+    margin-bottom: 1rem;
+}
+
+.archiving_img{
+    width: 100%;
+}
+
+.archiving_url{
+    margin-bottom: 1rem;
+    color: #258ddb;
+}
+
+.archiving_description{
+    color:#444;
+}

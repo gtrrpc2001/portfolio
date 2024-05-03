@@ -31,7 +31,7 @@ import slack from '../assets/communication/slack.png';
 import trello from '../assets/communication/trello.png';
 import python from '../assets/data analysis/Python-Dark.svg';
 import jupyter from '../assets/data analysis/jupyter.png';
-import pyspark from '../assets/data analysis/pyspark.jpg';
+import pyspark from '../assets/data analysis/pyspark.png';
 import grafana from '../assets/data monitoring/Grafana-Dark.svg';
 import prometheus from '../assets/data monitoring/Prometheus.svg';
 import kibana from '../assets/data monitoring/kibana-done.png';
@@ -69,70 +69,69 @@ export interface imagesType{
 }
 
 export const WebImageList:imagesType[] = [
-    {src:ts,alt:'WEB',text:''},
-    {src:sass,alt:'WEB',text:''},
     {src:html,alt:'WEB',text:'HTML'},
     {src:css,alt:'WEB',text:'CSS'},    
-    {src:react,alt:'WEB',text:'REACT'},
-    {src:redux,alt:'WEB',text:'REDUX'},
-    {src:router,alt:'WEB',text:'ROUTER'},
+    {src:ts,alt:'WEB',text:'TS'},
+    {src:sass,alt:'WEB',text:'Sass'},
+    {src:react,alt:'WEB',text:'React'},
+    {src:redux,alt:'WEB',text:'Redux'},
+    {src:router,alt:'WEB',text:'Router'},
     {src:stylecpm,alt:'WEB',text:'Styled'},
-    {src:tcss,alt:'WEB',text:'TWCSS'},
-    {src:mui,alt:'WEB',text:'MUI'},    
-    {src:emotion,alt:'WEB',text:'EMOTION'},    
+    {src:tcss,alt:'WEB',text:'Twcss'},
+    {src:mui,alt:'WEB',text:'Mui'},    
+    {src:emotion,alt:'WEB',text:'Emotion'},    
 ]
 
 export const AppImageList:imagesType[] = [
-    {src:dart,alt:'APP',text:'DART'},
-    {src:flutter,alt:'APP',text:'FLUTTER'},
-    {src:gradle,alt:'APP',text:'GRADLE'},
-    {src:java,alt:'APP',text:'JAVA'},
-    {src:kotlin,alt:'APP',text:'KOTLIN'}
+    {src:dart,alt:'APP',text:'Dart'},
+    {src:flutter,alt:'APP',text:'Flutter'},
+    {src:gradle,alt:'APP',text:'Gradle'},
+    {src:java,alt:'APP',text:'Java'},
+    {src:kotlin,alt:'APP',text:'Kotlin'}
 ]
 
-export const BackendImageList:imagesType[] = [
-    {src:js,alt:'Backend',text:''},
-    {src:bts,alt:'Backend',text:''},
-    {src:swagger,alt:'Backend',text:''},
-    {src:express,alt:'Backend',text:'EXPRESS'},
-    {src:firebase,alt:'Backend',text:'FIREBASE'},    
-    {src:nest,alt:'Backend',text:'NEST'},
-    {src:node,alt:'Backend',text:'NODE'},    
-    {src:jwt,alt:'Backend',text:'JWT'},
-    {src:mongoose,alt:'Backend',text:'MONGOOSE'},
-    {src:msa,alt:'Backend',text:'MSA'},
-    {src:socket,alt:'Backend',text:'SOCKET'},    
+export const BackendImageList:imagesType[] = [    
+    {src:bts,alt:'Backend',text:'TS'},
+    {src:nest,alt:'Backend',text:'Nest'},
+    {src:express,alt:'Backend',text:'Express'},
+    {src:node,alt:'Backend',text:'Node'},    
+    {src:jwt,alt:'Backend',text:'Jwt'},
+    {src:msa,alt:'Backend',text:'Msa'},
+    {src:socket,alt:'Backend',text:'Socket'},    
+    {src:swagger,alt:'Backend',text:'Swagger'},
+    {src:firebase,alt:'Backend',text:'Firebase'},    
+    {src:mongoose,alt:'Backend',text:'Mongoose'},
 ]
 
 export const CloudImageList:imagesType[] = [
-    {src:aws,alt:'Cloud',text:'AWS'}
+    {src:aws,alt:'Cloud',text:'Aws'}
 ]
 
 export const CommunicationImageList:imagesType[] = [
-    {src:figma,alt:'Communication',text:'FIGMA'},
-    {src:slack,alt:'Communication',text:'SLACK'},
-    {src:trello,alt:'Communication',text:'TRELLO'}
+    {src:figma,alt:'Communication',text:'Figma'},
+    {src:slack,alt:'Communication',text:'Slack'},
+    {src:trello,alt:'Communication',text:'Trello'}
 ]
 
 export const AnalysisImageList:imagesType[] = [
-    {src:python,alt:'Analysis',text:'PYTHON'},
-    {src:jupyter,alt:'Analysis',text:'JUPYTER'},
-    {src:pyspark,alt:'Analysis',text:'PYSPARK'}
+    {src:python,alt:'Analysis',text:'Python'},
+    {src:jupyter,alt:'Analysis',text:'Jupyter'},
+    {src:pyspark,alt:'Analysis',text:'Pyspark'}
 ]
 
 export const MonitoringImageList:imagesType[] = [
-    {src:grafana,alt:'Monitoring',text:'GRAFANA'},
-    {src:prometheus,alt:'Monitoring',text:'PROMETHEUS'},
+    {src:grafana,alt:'Monitoring',text:'Grafana'},
+    {src:prometheus,alt:'Monitoring',text:'Pro\nMetheus'},
     {src:kibana,alt:'Monitoring',text:''}
 ]
 
 export const PipelineImageList:imagesType[] = [
-    {src:kafka,alt:'Pipeline',text:'KAFKA'},
-    {src:logstash,alt:'Pipeline',text:'LOGSTASH'}
+    {src:kafka,alt:'Pipeline',text:'Kafka'},
+    {src:logstash,alt:'Pipeline',text:'Logstash'}
 ]
 
 export const DbImageList:imagesType[] = [
-    {src:elasticsearch,alt:'Db',text:'ELASTICSEARCH'},
+    {src:elasticsearch,alt:'Db',text:'Elastic \n Search'},
     {src:mongodb,alt:'Db',text:'MONGODB'},
     {src:mysql,alt:'Db',text:'MYSQL'},
     {src:redis,alt:'Db',text:'REDIS'},
@@ -140,35 +139,35 @@ export const DbImageList:imagesType[] = [
 ]
 
 export const DeployImageList:imagesType[] = [
-    {src:sh,alt:'Deploy',text:'SHELL SCRIPT'},
-    {src:docker,alt:'Deploy',text:'DOCKER'},
-    {src:githubaction,alt:'Deploy',text:'GITHUB ACTION'},
-    {src:nginx,alt:'Deploy',text:'NGINX'},
-    {src:cloudtype,alt:'Deploy',text:'CLOUDTYPE'},
-    {src:ftp,alt:'Deploy',text:''},
-    {src:iis,alt:'Deploy',text:''}
+    {src:sh,alt:'Deploy',text:'Shell\nScript'},
+    {src:docker,alt:'Deploy',text:'Docker'},
+    {src:githubaction,alt:'Deploy',text:'Github\nAction'},
+    {src:nginx,alt:'Deploy',text:'Nginx'},
+    {src:cloudtype,alt:'Deploy',text:'Cloudtype'},
+    {src:ftp,alt:'Deploy',text:'Ftp'},
+    {src:iis,alt:'Deploy',text:'Iis'}
 ]
 
 export const OsImageList:imagesType[] = [
-    {src:linux,alt:'Os',text:'LINUX'},
-    {src:ubuntu,alt:'Os',text:'UBUNTU'},
-    {src:windows,alt:'Os',text:'WINDOWS'}
+    {src:linux,alt:'Os',text:'Linux'},
+    {src:ubuntu,alt:'Os',text:'Ubuntu'},
+    {src:windows,alt:'Os',text:'Windows'}
 ]
 
 export const SoftwareImageList:imagesType[] = [
-    {src:csharp,alt:'Software',text:''},
-    {src:dotnet,alt:'Software',text:''}
+    {src:csharp,alt:'Software',text:'C#'},
+    {src:dotnet,alt:'Software',text:'.NET'}
 ]
 
 export const TestImageList:imagesType[] = [
-    {src:jest,alt:'Test',text:'JEST'},
-    {src:jmeter,alt:'Test',text:''},
-    {src:sentry,alt:'Test',text:'SENTRY'}
+    {src:jest,alt:'Test',text:'Jest'},
+    {src:sentry,alt:'Test',text:'Sentry'},
+    {src:jmeter,alt:'Test',text:''}
 ]
 
 export const VersionImageList:imagesType[] = [
-    {src:git,alt:'Version',text:'GIT'},
-    {src:gitlab,alt:'Version',text:'GITLAB'},
-    {src:github,alt:'Version',text:'GITHUB'},
-    {src:svn,alt:'Version',text:''}
+    {src:git,alt:'Version',text:'Git'},
+    {src:gitlab,alt:'Version',text:'Gitlab'},
+    {src:github,alt:'Version',text:'Github'},
+    {src:svn,alt:'Version',text:'Svn'}
 ]
