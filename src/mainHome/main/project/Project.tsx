@@ -2,8 +2,6 @@ import { Title } from '../title/Title';
 import './Project.scss';
 import link from '../../../assets/image/white-link.png';
 import { Box } from './box/Box';
-import { emrImageList } from '../../../interface/Images';
-import { SpanColorText } from '../../../component/SpanColorText/SpanColorText';
 import { Projects } from '../../../interface/ProjectList';
 
 export const Project = () => {
