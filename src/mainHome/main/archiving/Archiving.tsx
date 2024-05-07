@@ -1,7 +1,7 @@
-import { Lint } from '../../../component/Link/Link';
 import link from '../../../assets/image/white-link.png';
 import github from '../../../assets/image/git-hub.png';
 import './Archiving.scss'
+import { Title } from '../title/Title';
 
 // type Props = {
 
@@ -11,12 +11,7 @@ export const Archiving = () => {
     return (
         <article className='archiving'>
             <div className='archiving_content'>
-                <div className='section_title'>
-                    <div className='section_title_text'>
-                    ARCHIVING
-                    </div>
-                    <Lint src={link}/>
-                </div>
+                <Title title='ARCHIVING' link={link} defaultColor={false}/>  
                 <div className='archiving_content_show'>
                     <a className='archiving_content_github' href='https://github.com/gtrrpc2001'>
                         <div className='archiving_img_wrapper'>
@@ -28,12 +23,12 @@ export const Archiving = () => {
                         <div className='archiving_description'>
                             <p>
                               <b>소스 코드 저장소</b>  
-                              "입니다."
+                              입니다.
                             </p>
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>현재 회사 프로젝트,프로그램, 앱,웹의 소스 코드</li>
+                                <li>과거 회사 프로젝트,프로그램 소스 코드</li>
+                                <li>과거 회사 과제 및 혼자 개발 한 프로그램 소스 코드</li>
                             </ul>
                         </div>
                     </a>                    

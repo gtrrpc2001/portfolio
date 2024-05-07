@@ -1,5 +1,5 @@
 $imagSize:2rem;
-$fontWeight:400;
+$fontWeight:700;
 
 .aboutme_section_title{
     display: table;
@@ -9,6 +9,9 @@ $fontWeight:400;
 
 .section_title_text{
     color: #000000;
+    &.white{
+        color: #fff;
+    }
     border-bottom-color: #838282;
     border-bottom-width: 1px;
     border-bottom-style: solid;    

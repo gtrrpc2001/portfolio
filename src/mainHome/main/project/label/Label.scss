@@ -1,0 +1,13 @@
+.label{
+    display: inline-block;
+    vertical-align: top;
+    width: 8.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.label:before{
+    content: '✔';
+    display: inline;
+    padding-right: .5rem;
+}

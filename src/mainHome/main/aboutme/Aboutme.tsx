@@ -7,13 +7,14 @@ import telephone from '../../../assets/svg/telephone-fill.svg'
 import pencil from '../../../assets/svg/pencil-fill.svg'
 import { ImgText } from './img/ImgText'
 import { Title } from '../title/Title'
+import link from '../../../assets/image/black-link.png';
 
 export const Aboutme = () => {
     return (
         <div className='aboutme'>
                 <article className='aboutme_article'>
                     <div className='aboutme_article_content'>
-                        <Title title='ABOUT ME'/>                    
+                        <Title title='ABOUT ME' link={link}/>                    
                         <div className='aboutme_basic_info'>
                             <div className='aboutme_basic_info_wrapper' id='up'>
                                 <ImgText src={person} label={'이름'} text={'이충헌'}/>                                

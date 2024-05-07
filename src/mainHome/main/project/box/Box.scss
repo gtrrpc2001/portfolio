@@ -1,0 +1,78 @@
+$fontWeight:700;
+
+.container_wrapper{    
+    padding: 3rem;
+    margin: 0 auto 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2)
+}
+
+.container_title{
+    padding-bottom: .5rem;
+    font-weight: $fontWeight;
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+}
+
+.container_time{
+    margin-bottom: 2rem;
+    font-weight: $fontWeight;
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: center;
+    opacity: .8;
+}
+
+.project_people{
+   display: inline-block; 
+}
+
+.project_info{
+    display: flex;
+    // flex-flow: row wrap;
+    justify-content: center;
+    -webkit-box-pack: center;
+    width: 100%;
+}
+
+.project_img{
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+
+.project_descriptions{
+    width: calc(50% - 3rem);
+}
+
+.descripttion{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.project_info_wrapper{
+    display: flex;
+    margin-bottom: 1rem;    
+}
+
+.project_value{
+    display: inline-block;
+    vertical-align: bottom;
+    width: calc(100% - 8.4rem);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.project_github_url{
+    color: #258ddb;
+    cursor: pointer;
+    text-decoration: none;
+    word-break: break-all;
+}

@@ -3,7 +3,7 @@ import { Title } from "../title/Title";
 import { Container } from './container/Container';
 import { AnalysisImageList, AppImageList, BackendImageList, CloudImageList, CommunicationImageList, DbImageList, DeployImageList, MonitoringImageList, OsImageList, PipelineImageList, SoftwareImageList, TestImageList, VersionImageList, WebImageList, imagesType } from '../../../interface/Images';
 import { SkillTitleList } from '../../../interface/Titles';
-
+import link from '../../../assets/image/black-link.png';
 
 export const Skills = () => {    
 
@@ -15,7 +15,7 @@ export const Skills = () => {
     return (
             <article className='skill_article'>
                 <div className='skill_article_content'>
-                    <Title title="SKILLS"/>                    
+                    <Title title="SKILLS" link={link}/>                    
                     <div className='skill_basic_info'>
                         {ContainerList()}                        
                     </div>
