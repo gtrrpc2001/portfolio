@@ -2,7 +2,6 @@ import './Box.scss';
 import './Carousel.scss';
 import { Carousel } from "react-responsive-carousel";
 import { useState } from 'react';
-import { Label } from '../label/Label';
 import { ProjectList } from '../../../../interface/ProjectList';
 import { ProjectInfo } from '../info/ProjectInfo';
 
