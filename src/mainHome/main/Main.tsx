@@ -7,11 +7,6 @@ import { Project } from './project/Project';
 import { Skills } from './skills/Skills';
 import { ScrollProps, scrollRef } from '../../action/scroll';
 
-type Props = {
-    scroll:(id:string) => void,
-    refes: scrollRef
-}
-
 const sections = [
     { Component: Head, refName: 'Head' },
     { Component: Aboutme, refName: 'Aboutme' },
