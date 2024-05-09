@@ -1,9 +1,5 @@
 import './Head.scss'
 
-type Props = {
-    scroll:(id:string) => void,
-}
-
 export const Head = () => {
     return (
             <div className='head'>                
