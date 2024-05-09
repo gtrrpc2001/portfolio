@@ -3,7 +3,7 @@ import { widthSlice } from "./reducers";
 
 export const store = configureStore({
     reducer:{
-        width:widthSlice.reducer
+        width:widthSlice.reducer,
     }
 })
 

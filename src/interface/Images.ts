@@ -34,6 +34,7 @@ import pyspark from '../assets/data analysis/pyspark.png';
 import grafana from '../assets/data monitoring/Grafana-Dark.svg';
 import prometheus from '../assets/data monitoring/Prometheus.svg';
 import kibana from '../assets/data monitoring/kibana-done.png';
+import akhq from '../assets/data monitoring/akhq.jpg';
 import kafka from '../assets/data pipeline/kafka-done.svg';
 import logstash from '../assets/data pipeline/logstash.png';
 import elasticsearch from '../assets/db/Elasticsearch-Dark.svg';
@@ -137,7 +138,8 @@ export const AnalysisImageList:imagesType[] = [
 export const MonitoringImageList:imagesType[] = [
     {src:grafana,alt:'Monitoring',text:'Grafana'},
     {src:prometheus,alt:'Monitoring',text:'Pro\nMetheus'},
-    {src:kibana,alt:'Monitoring',text:''}
+    {src:kibana,alt:'Monitoring',text:''},
+    {src:akhq,alt:'Monitoring',text:''},
 ]
 
 export const PipelineImageList:imagesType[] = [

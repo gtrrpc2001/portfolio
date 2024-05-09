@@ -1,5 +1,6 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
+
 export const widthSlice = createSlice({
     name:"width",
     initialState:Number,

@@ -3,15 +3,15 @@ import github from '../../../assets/image/git-hub.png';
 import './Archiving.scss'
 import { Title } from '../title/Title';
 
-// type Props = {
+type Props = {
+    scroll:(id:string) => void,
+}
 
-// }
-
-export const Archiving = () => {
+export const Archiving = ({scroll}:Props) => {
     return (
         <article className='archiving'>
             <div className='archiving_content'>
-                <Title title='ARCHIVING' link={link} defaultColor={false}/>  
+                <Title title='ARCHIVING' link={link} defaultColor={false} scroll={scroll} id='Archiving'/>  
                 <div className='archiving_content_show'>
                     <a className='archiving_content_github' href='https://github.com/gtrrpc2001'>
                         <div className='archiving_img_wrapper'>

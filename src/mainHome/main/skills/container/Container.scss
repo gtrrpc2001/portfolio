@@ -1,5 +1,10 @@
 $box-size: border-box;
 
+.skill_container:hover{
+    -webkit-transform: translateY(.5rem);
+    -webkit-transition: -webkit-transform .2s ease;
+}
+
 .skill_container{
     -webkit-box-sizing: $box-size;
     flex-shrink: 0;

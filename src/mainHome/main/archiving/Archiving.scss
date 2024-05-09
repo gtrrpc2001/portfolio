@@ -18,6 +18,11 @@ $webkit: border-box;
     justify-content: space-around;
 }
 
+.archiving_content_github:hover{
+    -webkit-transform: translateY(.5rem);
+    -webkit-transition: -webkit-transform .2s ease;
+}
+
 .archiving_content_github{
     -webkit-box-sizing: $webkit;
     width: 26rem;

@@ -4,7 +4,11 @@ import link from '../../../assets/image/white-link.png';
 import { Box } from './box/Box';
 import { Projects } from '../../../interface/ProjectList';
 
-export const Project = () => {
+type Props = {
+    scroll:(id:string) => void,
+}
+
+export const Project = ({scroll}:Props) => {
 
     const getProjectList = () => {
        return Projects.map(p => {
@@ -25,7 +29,7 @@ export const Project = () => {
     return (
         <article className='project_article'>
             <div className='project_content'>
-                <Title title='PROJECTS' link={link} defaultColor={false}/>
+                <Title title='PROJECTS' link={link} defaultColor={false} scroll={scroll} id='Project'/>
                 <div className='project_container'>
                     {getProjectList()}
                 </div>

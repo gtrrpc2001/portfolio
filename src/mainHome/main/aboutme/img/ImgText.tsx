@@ -7,6 +7,26 @@ type Props = {
 }
 
 export const ImgText = ({src,label,text}:Props) => {
+
+    const textUI = () => {
+        switch(label){
+            case "연락처":
+                return (
+                    <a className='link' href={`tel:${text}`}>
+                        {text}
+                    </a>
+                );
+            case "이메일":
+                return (
+                    <a className='link' href={`mailto:${text}`}>
+                        {text}
+                    </a>
+                );
+            default:
+                return text;
+        }
+    }
+
     return (
         <div className='aboutme_basic_info_wrapper_'>
             <div className='aboutme_basic_info_wrapper__'>
@@ -17,7 +37,7 @@ export const ImgText = ({src,label,text}:Props) => {
                     {label}
                 </div>
                 <div className='aboutme_basic_info_text_name'>
-                    {text}
+                    {textUI()}
                 </div>
             </div>
         </div>

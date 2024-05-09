@@ -5,7 +5,11 @@ import { AnalysisImageList, AppImageList, BackendImageList, CloudImageList, Comm
 import { SkillTitleList } from '../../../interface/Titles';
 import link from '../../../assets/image/black-link.png';
 
-export const Skills = () => {    
+type Props = {
+    scroll:(id:string) => void,
+}
+
+export const Skills = ({scroll}:Props) => {    
 
     const ContainerList = () => {
         const titles:string[] = SkillTitleList
@@ -15,7 +19,7 @@ export const Skills = () => {
     return (
             <article className='skill_article'>
                 <div className='skill_article_content'>
-                    <Title title="SKILLS" link={link}/>                    
+                    <Title title="SKILLS" link={link} scroll={scroll} id='Skills'/>                    
                     <div className='skill_basic_info'>
                         {ContainerList()}                        
                     </div>
