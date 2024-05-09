@@ -3,18 +3,15 @@ import { PageUp } from "../../component/pageup/PageUp";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 import './Layout.scss'
+import { ScrollProps } from "../../action/scroll";
 
-type Props = {
-    scroll:(id:string) => void,
-}
-
-export const Layout = ({children,scroll}:PropsWithChildren & Props) => { 
+export const Layout = ({children,scroll}:PropsWithChildren & ScrollProps) => { 
 
     return (
         <div className="layout">        
             <Header scroll={scroll}/>
             {children}
-            <PageUp/>            
+            <PageUp scroll={scroll}/>            
             <Footer/>
         </div>
     );

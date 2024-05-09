@@ -5,7 +5,7 @@ import { Career } from './career/Career';
 import { Head } from './head/Head';
 import { Project } from './project/Project';
 import { Skills } from './skills/Skills';
-import { scrollRef } from '../../action/scroll';
+import { ScrollProps, scrollRef } from '../../action/scroll';
 
 type Props = {
     scroll:(id:string) => void,
@@ -21,11 +21,11 @@ const sections = [
     { Component: Career, refName: 'Career' },
   ];
 
-export const Main = ({scroll,refes}:Props) => {
+export const Main = ({scroll,refes}:ScrollProps) => {
     return (
         <main className="main">
             {sections.map(({Component,refName}) => (
-                <div ref={refes[refName]}>
+                <div ref={refes ? refes[refName] : undefined}>
                     <Component scroll={scroll}/>
                 </div>
             ))} 

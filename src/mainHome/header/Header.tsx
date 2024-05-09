@@ -3,14 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import whiteLink from '../../assets/image/white-link.png'
 import blackLink from '../../assets/image/black-link.png'
-import { useScroll } from '../../action/scroll';
+import { ScrollProps, useScroll } from '../../action/scroll';
 import { useMenuVisible } from '../../action/menu';
 
-type Props = {
-    scroll:(id:string) => void,
-}
-
-export const Header = ({scroll}:Props) => {
+export const Header = ({scroll}:ScrollProps) => {
     const isScrolled = useScroll();
     const menuVisible = useMenuVisible();
     const menuItems = ['Aboutme', 'Skills', 'Archiving', 'Projects', 'Career'];

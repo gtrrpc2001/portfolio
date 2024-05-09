@@ -2,12 +2,9 @@ import { Title } from '../title/Title';
 import './Career.scss';
 import link from '../../../assets/image/black-link.png';
 import { Logo } from './logo/Logo';
+import { ScrollProps } from '../../../action/scroll';
 
-type Props = {
-    scroll:(id:string) => void,
-}
-
-export const Career = ({scroll}:Props) => {
+export const Career = ({scroll}:ScrollProps) => {
     return (
         <article className='career_article'>
             <div className='career_content'>

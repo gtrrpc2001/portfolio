@@ -8,12 +8,9 @@ import pencil from '../../../assets/svg/pencil-fill.svg'
 import { ImgText } from './img/ImgText'
 import { Title } from '../title/Title'
 import link from '../../../assets/image/black-link.png';
+import { ScrollProps } from '../../../action/scroll'
 
-type Props = {
-    scroll:(id:string) => void,
-}
-
-export const Aboutme = ({scroll}:Props) => {
+export const Aboutme = ({scroll}:ScrollProps) => {
  
     return (
         <div className='aboutme'>

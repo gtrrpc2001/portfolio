@@ -25,3 +25,8 @@ export const getScrollView = (ref:React.RefObject<HTMLDivElement>) => {
 
     return isScrolled;
 };
+
+export interface ScrollProps {
+    scroll:(id:string) => void,
+    refes?: scrollRef
+}

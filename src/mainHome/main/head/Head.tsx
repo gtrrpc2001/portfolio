@@ -1,10 +1,7 @@
+import { ScrollProps } from '../../../action/scroll';
 import './Head.scss'
 
-type Props = {
-    scroll:(id:string) => void,
-}
-
-export const Head = ({scroll}:Props) => {
+export const Head = ({scroll}:ScrollProps) => {
     return (
             <div className='head'>                
                 <div className='head_content'>

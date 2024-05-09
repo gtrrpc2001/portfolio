@@ -3,12 +3,9 @@ import './Project.scss';
 import link from '../../../assets/image/white-link.png';
 import { Box } from './box/Box';
 import { Projects } from '../../../interface/ProjectList';
+import { ScrollProps } from '../../../action/scroll';
 
-type Props = {
-    scroll:(id:string) => void,
-}
-
-export const Project = ({scroll}:Props) => {
+export const Project = ({scroll}:ScrollProps) => {
 
     const getProjectList = () => {
        return Projects.map(p => {

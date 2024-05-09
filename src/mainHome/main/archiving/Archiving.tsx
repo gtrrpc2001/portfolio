@@ -2,12 +2,9 @@ import link from '../../../assets/image/white-link.png';
 import github from '../../../assets/image/git-hub.png';
 import './Archiving.scss'
 import { Title } from '../title/Title';
+import { ScrollProps } from '../../../action/scroll';
 
-type Props = {
-    scroll:(id:string) => void,
-}
-
-export const Archiving = ({scroll}:Props) => {
+export const Archiving = ({scroll}:ScrollProps) => {
     return (
         <article className='archiving'>
             <div className='archiving_content'>

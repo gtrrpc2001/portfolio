@@ -20,12 +20,9 @@ import {
 } from '../../../interface/Images';
 import { SkillTitleList } from '../../../interface/Titles';
 import link from '../../../assets/image/black-link.png';
+import { ScrollProps } from '../../../action/scroll';
 
-type Props = {
-    scroll:(id:string) => void,
-}
-
-export const Skills = ({scroll}:Props) => {    
+export const Skills = ({scroll}:ScrollProps) => {    
 
     const imageListMap: { [key: string]: imagesType[] } = {
         "WEB": WebImageList,
