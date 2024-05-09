@@ -5,7 +5,7 @@ import { Career } from './career/Career';
 import { Head } from './head/Head';
 import { Project } from './project/Project';
 import { Skills } from './skills/Skills';
-import { ScrollProps, scrollRef } from '../../action/scroll';
+import { ScrollProps } from '../../action/scroll';
 
 const sections = [
     { Component: Head, refName: 'Head' },
