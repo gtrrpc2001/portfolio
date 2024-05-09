@@ -14,7 +14,7 @@ export const Home = () => {
     const projects = useRef<HTMLDivElement>(null);
     const career = useRef<HTMLDivElement>(null);   
     const header = useRef<HTMLDivElement>(null);
-
+      
 
     const resizeHandler = () => {
         setWidth(window.innerWidth)
@@ -27,9 +27,7 @@ export const Home = () => {
 
     useEffect(()=>{
         widthPatch(Width(width))    
-    },[width,widthPatch])   
-
-    
+    },[width,widthPatch])       
 
     const scrollToRef = (id:string) => {          
         switch(id){
@@ -52,10 +50,11 @@ export const Home = () => {
                 getScrollView(header)
                 break;
         }        
-    };
+    };       
 
     const getRefes = ():scrollRef => {
-        return {Aboutme:aboutme,Skills:skills,Archiving:archiving,Project:projects,Career:career,Head:header}
+        const refes:scrollRef = {["Aboutme"]:aboutme,["Skills"]:skills,["Archiving"]:archiving,["Project"]:projects,["Career"]:career,["Head"]:header}        
+        return refes
     }
 
     return (

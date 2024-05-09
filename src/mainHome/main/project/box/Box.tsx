@@ -1,12 +1,26 @@
 import './Box.scss';
 import './Carousel.scss';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { useState } from 'react';
 import { Label } from '../label/Label';
 import { ProjectList } from '../../../../interface/ProjectList';
+import { ProjectInfo } from '../info/ProjectInfo';
 
-export const Box = ({title,time,people,work,imageList,borderRadius,descripttion,mainFunction,github,frontend,backend,db,deploy}:ProjectList) => {
+export const Box = ({
+    title,
+    time,
+    people,
+    work,
+    imageList,
+    borderRadius,
+    descripttion,
+    mainFunction,
+    github,
+    frontend,
+    backend,
+    db,
+    deploy
+}:ProjectList) => {
     const [moveIndex, setMoveIndex] = useState(0);    
 
     const handleChange = (index:number) => {
@@ -52,48 +66,12 @@ export const Box = ({title,time,people,work,imageList,borderRadius,descripttion,
                     <div className='descripttion'>
                         {descripttion}
                     </div>
-                    <div className='project_info_wrapper'>
-                        <Label text='주요 기능'/>
-                        <div id='project_mainFunction' className='project_value'>                        
-                                {mainFunction}
-                        </div>
-                    </div>
-
-                    <div className='project_info_wrapper'>
-                        <Label text='GitHub'/>
-                        <div id='project_github' className='project_value'>
-                            <a className='project_github_url'href={githubCheck ? github : ''}>
-                                { githubCheck ? github.split('//')[1] : github}
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className='project_info_wrapper'>
-                        <Label text='Frontend'/>
-                        <div id='project_frontend' className='project_value'>
-                            {frontend}
-                        </div>
-                    </div>
-                    <div className='project_info_wrapper'>
-                        <Label text='Backend'/>
-                        <div id='project_backend' className='project_value'>
-                            {backend}
-                        </div>
-                    </div>
-
-                    <div className='project_info_wrapper'>
-                        <Label text='Database'/>
-                        <div id='project_db' className='project_value'>
-                            {db}
-                        </div>
-                    </div>
-
-                    <div className='project_info_wrapper'>
-                        <Label text='Deployment'/>
-                        <div id='project_deploy' className='project_value'>
-                            {deploy}
-                        </div>
-                    </div>
+                    <ProjectInfo label='주요 기능' value={mainFunction} />
+                    <ProjectInfo label='GitHub' value={githubCheck ? github.split('//')[1] : github} link={githubCheck ? github : ''} />
+                    <ProjectInfo label='Frontend' value={frontend} />
+                    <ProjectInfo label='Backend' value={backend} />
+                    <ProjectInfo label='Database' value={db} />
+                    <ProjectInfo label='Deployment' value={deploy} />                    
                 </div>
             </div>            
         </div>

@@ -1,6 +1,10 @@
 import './Head.scss'
 
-export const Head = () => {
+type Props = {
+    scroll:(id:string) => void,
+}
+
+export const Head = ({scroll}:Props) => {
     return (
             <div className='head'>                
                 <div className='head_content'>
@@ -15,7 +19,7 @@ export const Head = () => {
                         풀 스택 백엔드 개발자 입니다.<br/>
                         꼼꼼한 성격, 자기개발을 밥 먹듯이 하는 습관이 저의 장점입니다.
                     </div>
-                    <div className='head_content_find-out-more'>더 알아보기 ↓</div>
+                    <div className='head_content_find-out-more' onClick={() =>scroll('Aboutme')}>더 알아보기 ↓</div>
                 </div>
             </div>
     );

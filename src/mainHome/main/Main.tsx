@@ -9,29 +9,26 @@ import { scrollRef } from '../../action/scroll';
 
 type Props = {
     scroll:(id:string) => void,
-    refes:scrollRef
+    refes: scrollRef
 }
+
+const sections = [
+    { Component: Head, refName: 'Head' },
+    { Component: Aboutme, refName: 'Aboutme' },
+    { Component: Skills, refName: 'Skills' },
+    { Component: Archiving, refName: 'Archiving' },
+    { Component: Project, refName: 'Project' },
+    { Component: Career, refName: 'Career' },
+  ];
+
 export const Main = ({scroll,refes}:Props) => {
     return (
-        <main className="main">            
-            <div ref={refes.Head}>
-                <Head/>
-            </div>
-            <div ref={refes.Aboutme}>
-                <Aboutme scroll={scroll}/>
-            </div>
-            <div ref={refes.Skills}>
-                <Skills scroll={scroll}/>
-            </div>
-            <div ref={refes.Archiving}>
-                <Archiving scroll={scroll}/>
-            </div>
-            <div ref={refes.Project}>
-                <Project scroll={scroll}/>
-            </div>
-            <div ref={refes.Career}>
-                <Career scroll={scroll}/>
-            </div>
+        <main className="main">
+            {sections.map(({Component,refName}) => (
+                <div ref={refes[refName]}>
+                    <Component scroll={scroll}/>
+                </div>
+            ))} 
         </main>
     );
 }

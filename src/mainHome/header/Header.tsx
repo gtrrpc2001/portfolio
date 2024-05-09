@@ -1,43 +1,20 @@
 import './Header.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../store/store';
 import whiteLink from '../../assets/image/white-link.png'
 import blackLink from '../../assets/image/black-link.png'
-// import { setActiveSection } from '../../store/reducers';
+import { useScroll } from '../../action/scroll';
+import { useMenuVisible } from '../../action/menu';
 
 type Props = {
     scroll:(id:string) => void,
 }
 
 export const Header = ({scroll}:Props) => {
-    const [menuVisible,setMenuVisible] = useState<boolean>(false)
-    const width = useSelector<RootState,number>((state) => state.width)
-    const [isScrolled, setIsScrolled] = useState(false);  
-        
-    useEffect(()=>{
-        if(Number(width) < 750)
-            setMenuVisible(true)
-        else
-            setMenuVisible(false)
-    },[width])
-    
-    useEffect(() => {
-        const handleScroll = () => {          
-          const isScrolled = window.scrollY > 500;
-          setIsScrolled(isScrolled);
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
-
-    const itemClassName = `header_menu_item ${isScrolled ? 'scroll' : ''}`   
+    const isScrolled = useScroll();
+    const menuVisible = useMenuVisible();
+    const menuItems = ['Aboutme', 'Skills', 'Archiving', 'Projects', 'Career'];
+    const itemClassName = `header_menu_item ${isScrolled ? 'scroll' : ''}`;   
 
     return (
         <header className={`header ${isScrolled ? 'scroll' : ''}`} >
@@ -50,11 +27,9 @@ export const Header = ({scroll}:Props) => {
                         Portfolio
                     </div>
                     <div className='header_menu'>
-                        <div className={itemClassName} onClick={() => scroll('Aboutme')}>About me</div>
-                        <div className={itemClassName} onClick={() => scroll('Skills')}>Skills</div>
-                        <div className={itemClassName} onClick={() => scroll('Archiving')}>Archiving</div>
-                        <div className={itemClassName} onClick={() => scroll('Projects')}>Projects</div>
-                        <div className={itemClassName} onClick={() => scroll('Career')}>Career</div>
+                        {menuItems.map(item => (                            
+                            <div className={itemClassName} onClick={() => scroll(item)}>{item == "Aboutme" ? "About me" : item}</div>
+                        ))}
                     </div>
                 </div>
             )}

@@ -31,7 +31,6 @@ $fontWeight:700;
 
 .project_info{
     display: flex;
-    // flex-flow: row wrap;
     justify-content: center;
     -webkit-box-pack: center;
     width: 100%;
@@ -57,22 +56,4 @@ $fontWeight:700;
     font-size: 1rem;
 }
 
-.project_info_wrapper{
-    display: flex;
-    margin-bottom: 1rem;    
-}
 
-.project_value{
-    display: inline-block;
-    vertical-align: bottom;
-    width: calc(100% - 8.4rem);
-    font-weight: 400;
-    font-size: 1rem;
-}
-
-.project_github_url{
-    color: #258ddb;
-    cursor: pointer;
-    text-decoration: none;
-    word-break: break-all;
-}
