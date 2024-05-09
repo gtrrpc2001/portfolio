@@ -53,7 +53,7 @@ export const Home = () => {
     };       
 
     const getRefes = ():scrollRef => {
-        const refes:scrollRef = {["Aboutme"]:aboutme,["Skills"]:skills,["Archiving"]:archiving,["Project"]:projects,["Career"]:career,["Head"]:header}        
+        const refes:scrollRef = {"Aboutme":aboutme,"Skills":skills,"Archiving":archiving,"Project":projects,"Career":career,"Head":header}        
         return refes
     }
 
