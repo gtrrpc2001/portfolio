@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import './Main.scss'
 import { Aboutme } from './aboutme/Aboutme';
 import { Archiving } from './archiving/Archiving';
