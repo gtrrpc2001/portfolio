@@ -1,7 +1,7 @@
 import './Header.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
 import whiteLink from '../../assets/image/white-link.png'
