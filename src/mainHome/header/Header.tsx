@@ -24,7 +24,7 @@ export const Header = ({scroll}:ScrollProps) => {
                     </div>
                     <div className='header_menu'>
                         {menuItems.map(item => (                            
-                            <div className={itemClassName} onClick={() => scroll(item)}>{item == "Aboutme" ? "About me" : item}</div>
+                            <div className={itemClassName} onClick={() => scroll(item)}>{item === "Aboutme" ? "About me" : item}</div>
                         ))}
                     </div>
                 </div>
