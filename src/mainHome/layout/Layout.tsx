@@ -1,4 +1,4 @@
-import { PropsWithChildren, useRef } from "react";
+import { PropsWithChildren } from "react";
 import { PageUp } from "../../component/pageup/PageUp";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
