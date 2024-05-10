@@ -1,0 +1,50 @@
+@mixin careerTimeStyle{
+    font-weight: 400;  
+    padding-bottom: 1rem;
+}
+
+@mixin careerSubStyle{
+    @include careerTimeStyle();
+    font-size: .9rem;
+}
+
+
+
+.career_info{
+    padding-left: 3rem;
+}
+
+.career_title{
+    padding-bottom: .5rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.career_language{
+    @include careerTimeStyle();
+}
+
+.career_db{
+    @include careerTimeStyle();
+}
+
+.career_deploy{
+    @include careerTimeStyle();
+}
+
+.career_work{
+    @include careerTimeStyle();
+}
+
+.career_time{
+    font-size: 1.1rem;
+    @include careerTimeStyle();
+    color: #6c757d;
+}
+
+
+
+.career_description{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}

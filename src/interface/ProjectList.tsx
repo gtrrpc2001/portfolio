@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import { emrImageList, projectsImagesType } from "./Images"
+import { adminWebImageList, emrImageList, projectsImagesType, tingImageList } from "./Images"
 import { SpanColorText } from "../component/SpanColorText/SpanColorText"
 
 export interface ProjectList{
@@ -28,10 +28,10 @@ export const Projects:ProjectList[] = [
     borderRadius:0,
     descripttion: (
         <text>
-        <b>병원,의원 등에서 사용하는 winform기반 EMR 프로그램</b> 입니다. 
+        <b>병원, 의원 등에서 사용하는 winform기반 EMR 프로그램</b> 입니다.
         클라이언트 문의가 들어 오면 기능 수정 및 새로운 프로젝트 개발 담당 하였습니다.
         <p/>
-        VB.NET 과 C#을 주로 사용하여 <SpanColorText text='CS방식을 처음'/>접했었습니다.
+        VB.NET 과 C#을 주로 사용하여 <SpanColorText text='CS방식을 처음'/> 접했었습니다.
         <p/>
         DB에 Data 관리도 해야 했기 때문에 <SpanColorText text='MYSQL'/>을 처음 사용해 볼 수 있었고, 
         Windows 프로그램에 깊이를 배우기 너무 좋았습니다.
@@ -48,27 +48,55 @@ export const Projects:ProjectList[] = [
     },
 
     {
-        title:'test',
-        time:'',
-        people:0,
+        title:'관리자 웹',
+        time:'23.12 ~ 24.01',
+        people:1,
         work:true,
-        imageList:[],
+        imageList:adminWebImageList,
         borderRadius:0,
         descripttion: (
             <text>
-            <b></b> 
-            
+            현재 재직 중인 회사에서 서비스 중인 <b>건강관리 앱 관리자 웹페이지 </b> 입니다.
+            사용자 생체 데이터를 실시간으로 모니터링 가능하며 그래프로 날짜, 시간등을 선택 해서
+            지난 날의 데이터도 확인이 가능합니다.
             <p/>
-            
-            <p/>
-             <SpanColorText text='test'/>                      
+            <SpanColorText text='React'/> 
+            로 개발을 하였으며 <SpanColorText text='Typescript'/> 를 사용 하였습니다.
+            <p/>             
+             실시간으로 데이터를 받아야 하기때문에 메모리 관리에 신경을 썼습니다.                     
             </text>
         ),
-        mainFunction:'',
-        github:'',
-        frontend:'',
-        backend:'',
-        db:'',
-        deploy:''
+        mainFunction:'실시간 사용자 데이터 모니터링',
+        github:'https://github.com/gtrrpc2001/react',
+        frontend:'React',
+        backend:'Nest',
+        db:'Mysql',
+        deploy:'GitHub, Cloudtype, (Iis,Ftp)'
         },
+
+        {
+            title:'Ting',
+            time:'24.04 ~ ',
+            people:3,
+            work:false,
+            imageList:tingImageList,
+            borderRadius:0,
+            descripttion: (
+                <text>
+                프로젝트팀에 들어가 소셜커뮤니티 앱에서 <b>백엔드</b>를 담당 하고 있습니다. 
+                실시간 위치를 지도에서 볼 수 있으며 다른 사용자 와 지역축제 및 다양한 정보 공유를 할 수 있습니다.                
+                <p/>
+                <SpanColorText text='Nest'/> 
+                로 개발을 하였으며 <SpanColorText text='Typescript'/> 를 사용 하였습니다.
+                <p/>
+                 실시간으로 데이터를 받아야 하기때문에 메모리 관리에 신경을 썼습니다.
+                </text>
+            ),
+            mainFunction:'채팅, 게시물, 위치공유',
+            github:'https://github.com/gtrrpc2001/ting',
+            frontend:'Flutter',
+            backend:'Nest',
+            db:'Mysql,Redis,MongoDB',
+            deploy:'AWS (EC2)'
+            },
 ]

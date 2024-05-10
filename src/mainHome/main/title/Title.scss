@@ -5,12 +5,16 @@ $fontWeight:700;
     display: table;
     position: relative;
     margin: 0 auto 3rem;
+    &.projectCSS{
+        margin: 0 auto;
+    }
 }
 
 .section_title_text{
     color: #000000;
     &.white{
         color: #fff;
+        border-bottom-color:#fff;
     }
     border-bottom-color: #838282;
     border-bottom-width: 1px;
@@ -22,3 +26,11 @@ $fontWeight:700;
 .section_title_text:hover{
     cursor: default;
 }
+
+.aboutme_section_notice_title{
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 auto 3rem;
+}
+    

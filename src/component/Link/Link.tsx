@@ -7,9 +7,10 @@ type Props = {
 }
 
 export const Lint = ({src,scroll,id}:Props) => {    
+    const imgClassName = `section_title_link ${id === "Project" && 'changeTop'}`
     return (
         <div className='section_title_link_wrapper' onClick={() => scroll(id)}>
-            <img className='section_title_link' src={src} alt='link_img' />
+            <img className={imgClassName} src={src} alt='link_img' />
         </div>
     );
 }

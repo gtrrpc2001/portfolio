@@ -30,7 +30,7 @@ export const Box = ({
 
     const renderSliders = imageList.map(m => (
         <div key={m.id}>
-            <img src={m.url} alt={m.alt} style={{width:`97%`,borderRadius:borderRadius}}/>
+            <img src={m.url} alt={m.alt} style={{width:`auto`,height:`auto`,borderRadius:borderRadius}}/>
         </div>
     ))
 
@@ -42,7 +42,7 @@ export const Box = ({
             <div className='container_time'>
                 {time}&nbsp;
                 <span className='project_people'>
-                    {`(${people}人 ${work ? '회사' : '개인'} 프로젝트)`}
+                    {`(${people}人 ${work ? '회사' : '팀'} 프로젝트)`}
                 </span>
             </div>
             <div className='project_info'>

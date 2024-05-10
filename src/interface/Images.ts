@@ -63,7 +63,14 @@ import github from '../assets/versioncontrol/Github-Dark.svg';
 import svn from '../assets/versioncontrol/svn.jpg';
 import emr1 from '../assets/image/projects/emr1.jpg'
 import emr2 from '../assets/image/projects/emr2.jpg'
-
+import admin1 from '../assets/image/projects/adminWeb.png';
+import admin2 from '../assets/image/projects/adminWeb2.png';
+import admin3 from '../assets/image/projects/adminWeb3.png';
+import admin4 from '../assets/image/projects/adminWeb4.png';
+import admin5 from '../assets/image/projects/adminWeb5.png';
+import ting from '../assets/image/projects/ting.png';
+import ting2 from '../assets/image/projects/ting2.png';
+import ting3 from '../assets/image/projects/ting3.png';
 
 export interface projectsImagesType{
     id:string;
@@ -73,8 +80,21 @@ export interface projectsImagesType{
 
 export const emrImageList:projectsImagesType[] = [
     {id:'emr1',url:emr1,alt:'EMR'},
-    {id:'emr2',url:emr2,alt:'EMR'},
-    
+    {id:'emr2',url:emr2,alt:'EMR'},    
+]
+
+export const adminWebImageList:projectsImagesType[] = [
+    {id:'admin1',url:admin1,alt:'admin'},
+    {id:'admin2',url:admin2,alt:'admin'},    
+    {id:'admin3',url:admin3,alt:'admin'},
+    {id:'admin4',url:admin4,alt:'admin'},
+    {id:'admin5',url:admin5,alt:'admin'},
+]
+
+export const tingImageList:projectsImagesType[] = [
+    {id:'ting',url:ting,alt:'ting'},
+    {id:'ting2',url:ting2,alt:'ting'},
+    {id:'ting3',url:ting3,alt:'ting'},
 ]
 
 export interface imagesType{
@@ -82,7 +102,6 @@ export interface imagesType{
     alt:string;
     text:string;    
 }
-
 
 export const WebImageList:imagesType[] = [
     {src:html,alt:'WEB',text:'HTML'},

@@ -3,6 +3,9 @@ $imagSize:2rem;
 .section_title_link_wrapper .section_title_link{
     position: absolute;
     top: 50%;
+    &.changeTop{
+        top: 35%;
+    }
     left: -3rem;
     -webkit-transform: translateY(-50%);
     width: $imagSize;   
