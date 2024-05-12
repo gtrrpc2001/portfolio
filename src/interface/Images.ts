@@ -71,6 +71,18 @@ import admin5 from '../assets/image/projects/adminWeb5.png';
 import ting from '../assets/image/projects/ting.png';
 import ting2 from '../assets/image/projects/ting2.png';
 import ting3 from '../assets/image/projects/ting3.png';
+import img1 from'../assets/image/introduction/001.png';
+import img2 from'../assets/image/introduction/002.png';
+import img3 from'../assets/image/introduction/003.png';
+import img4 from'../assets/image/introduction/004.png';
+
+export const IntroImageList:projectsImagesType[] = [
+    {id:'',url:'',alt:''},
+    {id:'img1',url:img1,alt:'Intro'},
+    {id:'img2',url:img2,alt:'Intro'},    
+    {id:'img3',url:img3,alt:'Intro'},
+    {id:'img4',url:img4,alt:'Intro'}
+]
 
 export interface projectsImagesType{
     id:string;

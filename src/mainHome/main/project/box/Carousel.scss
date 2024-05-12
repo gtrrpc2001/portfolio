@@ -158,6 +158,9 @@
       text-align: center; }
       .carousel .slide img {
         width: 100%;
+        &.exception{
+          width: 2rem;
+        }
         vertical-align: top;
         border: 0; }
       .carousel .slide iframe {
