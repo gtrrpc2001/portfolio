@@ -33,11 +33,11 @@ export const Aboutme = ({scroll}:ScrollProps) => {
 
     return (
         <div className='aboutme'>
-                <article className='aboutme_article'>                    
-                    <div className='aboutme_article_content'>
-                        <Slider ele={element}/>                        
-                    </div>                    
-                </article>
-            </div>
+            <article className='aboutme_article'>                    
+                <div className='aboutme_article_content'>
+                    <Slider ele={element}/>                        
+                </div>                    
+            </article>
+        </div>
     );
 }
