@@ -1,6 +1,6 @@
 import './Header.scss'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars } from "@fortawesome/free-solid-svg-icons";
 import whiteLink from '../../assets/image/white-link.png'
 import blackLink from '../../assets/image/black-link.png'
 import { ScrollProps, useScroll } from '../../action/scroll';
@@ -14,9 +14,9 @@ export const Header = ({scroll}:ScrollProps) => {
 
     return (
         <header className={`header ${isScrolled ? 'scroll' : ''}`} >
-            {menuVisible ? (
+            {/* {menuVisible ? (
                 <FontAwesomeIcon className='menuIcon' icon={faBars} size='2x'/>
-            ) : (
+            ) : ( */}
                 <div className='header_content'>
                     <div className={`header_title ${isScrolled ? 'scroll' : ''}`} onClick={()=>scroll('')}>
                         <img className={`header_img ${isScrolled ? 'scroll' : ''}`} src={!isScrolled ? whiteLink : blackLink} alt='header_img'/>
@@ -28,7 +28,7 @@ export const Header = ({scroll}:ScrollProps) => {
                         ))}
                     </div>
                 </div>
-            )}
+            {/* )} */}
         </header>
     );
 }
