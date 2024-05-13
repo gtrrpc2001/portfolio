@@ -4,6 +4,17 @@ import './Company.scss';
 import { CompanyInfo } from '../../../../interface/Careeres';
 
 export const Company = ({logo,title,time,language,tool,db,deploy,work,description,children}:CompanyInfo & PropsWithChildren) => {
+
+    const getDescription = () => {
+        const splitStr = description.split('\n')
+        console.log(splitStr)
+        return (
+            splitStr.map(s => (
+                <span>{s}<br/></span>
+            ))
+        );
+    }
+
     return (
         <>
             <Logo logo={logo}/>
@@ -37,7 +48,7 @@ export const Company = ({logo,title,time,language,tool,db,deploy,work,descriptio
                     {`고용형태 : ${work}`}
                 </div>
                 <div className='career_description'>
-                    {description}
+                    {getDescription()}
                 </div>
                 {children}
             </div>
