@@ -23,6 +23,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: Copy index.html to 404.html
+        run: cp build/index.html build/404.html
       - name: Deploy
         run: |
           cd build
