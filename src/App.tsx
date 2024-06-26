@@ -9,10 +9,10 @@ function App() {
   return (
     <Provider store={store}>
       <Routes>
-        <Route path='/' element={<Home/>}>
+        <Route path='/portfolio' element={<Home/>}>
           
         </Route>
-        <Route path='*' element={<Navigate to={'/'} replace={true}/>}/>
+        <Route path='*' element={<Navigate to={'/portfolio'} replace={true}/>}/>
       </Routes>
     </Provider>    
   );
