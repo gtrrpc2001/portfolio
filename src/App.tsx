@@ -12,7 +12,7 @@ function App() {
         <Route path='/' element={<Home/>}>
           
         </Route>
-        <Route path='*' element={<Navigate to={'/'}/>}/>
+        <Route path='*' element={<Navigate to={'/'} replace={true}/>}/>
       </Routes>
     </Provider>    
   );
