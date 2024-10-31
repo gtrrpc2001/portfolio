@@ -71,151 +71,156 @@ import admin5 from '../assets/image/projects/adminWeb5.png';
 import ting from '../assets/image/projects/ting.png';
 import ting2 from '../assets/image/projects/ting2.png';
 import ting3 from '../assets/image/projects/ting3.png';
-import img1 from'../assets/image/introduction/001.png';
-import img2 from'../assets/image/introduction/002.png';
-import img3 from'../assets/image/introduction/003.png';
-import img4 from'../assets/image/introduction/004.png';
+import analysis from '../assets/image/projects/analysis.jpg';
+import img1 from '../assets/image/introduction/001.png';
+import img2 from '../assets/image/introduction/002.png';
+import img3 from '../assets/image/introduction/003.png';
+import img4 from '../assets/image/introduction/004.png';
 
-export const IntroImageList:projectsImagesType[] = [
-    {id:'',url:'',alt:''},
-    {id:'img1',url:img1,alt:'Intro'},
-    {id:'img2',url:img2,alt:'Intro'},    
-    {id:'img3',url:img3,alt:'Intro'},
-    {id:'img4',url:img4,alt:'Intro'}
+export const IntroImageList: projectsImagesType[] = [
+    { id: '', url: '', alt: '' },
+    { id: 'img1', url: img1, alt: 'Intro' },
+    { id: 'img2', url: img2, alt: 'Intro' },
+    { id: 'img3', url: img3, alt: 'Intro' },
+    { id: 'img4', url: img4, alt: 'Intro' }
 ]
 
-export interface projectsImagesType{
-    id:string;
-    url:string;
-    alt:string;
+export interface projectsImagesType {
+    id: string;
+    url: string;
+    alt: string;
 }
 
-export const emrImageList:projectsImagesType[] = [
-    {id:'emr1',url:emr1,alt:'EMR'},
-    {id:'emr2',url:emr2,alt:'EMR'},    
+export const emrImageList: projectsImagesType[] = [
+    { id: 'emr1', url: emr1, alt: 'EMR' },
+    { id: 'emr2', url: emr2, alt: 'EMR' },
 ]
 
-export const adminWebImageList:projectsImagesType[] = [
-    {id:'admin1',url:admin1,alt:'admin'},
-    {id:'admin2',url:admin2,alt:'admin'},    
-    {id:'admin3',url:admin3,alt:'admin'},
-    {id:'admin4',url:admin4,alt:'admin'},
-    {id:'admin5',url:admin5,alt:'admin'},
+export const adminWebImageList: projectsImagesType[] = [
+    { id: 'admin1', url: admin1, alt: 'admin' },
+    { id: 'admin2', url: admin2, alt: 'admin' },
+    { id: 'admin3', url: admin3, alt: 'admin' },
+    { id: 'admin4', url: admin4, alt: 'admin' },
+    { id: 'admin5', url: admin5, alt: 'admin' },
 ]
 
-export const tingImageList:projectsImagesType[] = [
-    {id:'ting',url:ting,alt:'ting'},
-    {id:'ting2',url:ting2,alt:'ting'},
-    {id:'ting3',url:ting3,alt:'ting'},
+export const tingImageList: projectsImagesType[] = [
+    { id: 'ting', url: ting, alt: 'ting' },
+    { id: 'ting2', url: ting2, alt: 'ting' },
+    { id: 'ting3', url: ting3, alt: 'ting' },
 ]
 
-export interface imagesType{
-    src:string;    
-    alt:string;
-    text:string;    
+export const analysisImgList: projectsImagesType[] = [
+    { id: 'analysis', url: analysis, alt: 'analysis' },
+]
+
+export interface imagesType {
+    src: string;
+    alt: string;
+    text: string;
 }
 
-export const WebImageList:imagesType[] = [
-    {src:html,alt:'WEB',text:'HTML'},
-    {src:css,alt:'WEB',text:'CSS'},    
-    {src:ts,alt:'WEB',text:'TS'},
-    {src:sass,alt:'WEB',text:'Sass'},
-    {src:react,alt:'WEB',text:'React'},
-    {src:redux,alt:'WEB',text:'Redux'},
-    {src:router,alt:'WEB',text:'Router'},
-    {src:stylecpm,alt:'WEB',text:'Styled'},
-    {src:tcss,alt:'WEB',text:'Twcss'},
-    {src:mui,alt:'WEB',text:'Mui'},    
-    {src:emotion,alt:'WEB',text:'Emotion'},    
+export const WebImageList: imagesType[] = [
+    { src: html, alt: 'WEB', text: 'HTML' },
+    { src: css, alt: 'WEB', text: 'CSS' },
+    { src: ts, alt: 'WEB', text: 'TS' },
+    { src: sass, alt: 'WEB', text: 'Sass' },
+    { src: react, alt: 'WEB', text: 'React' },
+    { src: redux, alt: 'WEB', text: 'Redux' },
+    { src: router, alt: 'WEB', text: 'Router' },
+    { src: stylecpm, alt: 'WEB', text: 'Styled' },
+    { src: tcss, alt: 'WEB', text: 'Twcss' },
+    { src: mui, alt: 'WEB', text: 'Mui' },
+    { src: emotion, alt: 'WEB', text: 'Emotion' },
 ]
 
-export const AppImageList:imagesType[] = [
-    {src:dart,alt:'APP',text:'Dart'},
-    {src:flutter,alt:'APP',text:'Flutter'},
-    {src:gradle,alt:'APP',text:'Gradle'},
-    {src:java,alt:'APP',text:'Java'},
-    {src:kotlin,alt:'APP',text:'Kotlin'}
+export const AppImageList: imagesType[] = [
+    { src: dart, alt: 'APP', text: 'Dart' },
+    { src: flutter, alt: 'APP', text: 'Flutter' },
+    { src: gradle, alt: 'APP', text: 'Gradle' },
+    { src: java, alt: 'APP', text: 'Java' },
+    { src: kotlin, alt: 'APP', text: 'Kotlin' }
 ]
 
-export const BackendImageList:imagesType[] = [    
-    {src:bts,alt:'Backend',text:'TS'},
-    {src:nest,alt:'Backend',text:'Nest'},
-    {src:express,alt:'Backend',text:'Express'},
-    {src:node,alt:'Backend',text:'Node'},    
-    {src:jwt,alt:'Backend',text:'Jwt'},
-    {src:msa,alt:'Backend',text:'Msa'},
-    {src:socket,alt:'Backend',text:'Socket'},    
-    {src:swagger,alt:'Backend',text:'Swagger'},
-    {src:firebase,alt:'Backend',text:'Firebase'},    
-    {src:mongoose,alt:'Backend',text:'Mongoose'},
+export const BackendImageList: imagesType[] = [
+    { src: bts, alt: 'Backend', text: 'TS' },
+    { src: nest, alt: 'Backend', text: 'Nest' },
+    { src: express, alt: 'Backend', text: 'Express' },
+    { src: node, alt: 'Backend', text: 'Node' },
+    { src: jwt, alt: 'Backend', text: 'Jwt' },
+    { src: msa, alt: 'Backend', text: 'Msa' },
+    { src: socket, alt: 'Backend', text: 'Socket' },
+    { src: swagger, alt: 'Backend', text: 'Swagger' },
+    { src: firebase, alt: 'Backend', text: 'Firebase' },
+    { src: mongoose, alt: 'Backend', text: 'Mongoose' },
 ]
 
-export const CloudImageList:imagesType[] = [
-    {src:aws,alt:'Cloud',text:'Aws'}
+export const CloudImageList: imagesType[] = [
+    { src: aws, alt: 'Cloud', text: 'Aws' }
 ]
 
-export const CommunicationImageList:imagesType[] = [
-    {src:figma,alt:'Communication',text:'Figma'},
-    {src:slack,alt:'Communication',text:'Slack'},
-    {src:trello,alt:'Communication',text:'Trello'}
+export const CommunicationImageList: imagesType[] = [
+    { src: figma, alt: 'Communication', text: 'Figma' },
+    { src: slack, alt: 'Communication', text: 'Slack' },
+    { src: trello, alt: 'Communication', text: 'Trello' }
 ]
 
-export const AnalysisImageList:imagesType[] = [
-    {src:python,alt:'Analysis',text:'Python'},
-    {src:jupyter,alt:'Analysis',text:'Jupyter'},
-    {src:pyspark,alt:'Analysis',text:'Pyspark'}
+export const AnalysisImageList: imagesType[] = [
+    { src: python, alt: 'Analysis', text: 'Python' },
+    { src: jupyter, alt: 'Analysis', text: 'Jupyter' },
+    { src: pyspark, alt: 'Analysis', text: 'Pyspark' }
 ]
 
-export const MonitoringImageList:imagesType[] = [
-    {src:grafana,alt:'Monitoring',text:'Grafana'},
-    {src:prometheus,alt:'Monitoring',text:'Pro\nMetheus'},
-    {src:kibana,alt:'Monitoring',text:''},
-    {src:akhq,alt:'Monitoring',text:''},
+export const MonitoringImageList: imagesType[] = [
+    { src: grafana, alt: 'Monitoring', text: 'Grafana' },
+    { src: prometheus, alt: 'Monitoring', text: 'Pro\nMetheus' },
+    { src: kibana, alt: 'Monitoring', text: '' },
+    { src: akhq, alt: 'Monitoring', text: '' },
 ]
 
-export const PipelineImageList:imagesType[] = [
-    {src:kafka,alt:'Pipeline',text:'Kafka'},
-    {src:logstash,alt:'Pipeline',text:'Logstash'}
+export const PipelineImageList: imagesType[] = [
+    { src: kafka, alt: 'Pipeline', text: 'Kafka' },
+    { src: logstash, alt: 'Pipeline', text: 'Logstash' }
 ]
 
-export const DbImageList:imagesType[] = [
-    {src:elasticsearch,alt:'Db',text:'Elastic \n Search'},
-    {src:mongodb,alt:'Db',text:'MONGODB'},
-    {src:mysql,alt:'Db',text:'MYSQL'},
-    {src:redis,alt:'Db',text:'REDIS'},
-    {src:mariadb,alt:'Db',text:''}
+export const DbImageList: imagesType[] = [
+    { src: elasticsearch, alt: 'Db', text: 'Elastic \n Search' },
+    { src: mongodb, alt: 'Db', text: 'MONGODB' },
+    { src: mysql, alt: 'Db', text: 'MYSQL' },
+    { src: redis, alt: 'Db', text: 'REDIS' },
+    { src: mariadb, alt: 'Db', text: '' }
 ]
 
-export const DeployImageList:imagesType[] = [
-    {src:sh,alt:'Deploy',text:'Shell\nScript'},
-    {src:docker,alt:'Deploy',text:'Docker'},
-    {src:githubaction,alt:'Deploy',text:'Github\nAction'},
-    {src:nginx,alt:'Deploy',text:'Nginx'},
-    {src:cloudtype,alt:'Deploy',text:'Cloudtype'},
-    {src:ftp,alt:'Deploy',text:'Ftp'},
-    {src:iis,alt:'Deploy',text:'Iis'}
+export const DeployImageList: imagesType[] = [
+    { src: sh, alt: 'Deploy', text: 'Shell\nScript' },
+    { src: docker, alt: 'Deploy', text: 'Docker' },
+    { src: githubaction, alt: 'Deploy', text: 'Github\nAction' },
+    { src: nginx, alt: 'Deploy', text: 'Nginx' },
+    { src: cloudtype, alt: 'Deploy', text: 'Cloudtype' },
+    { src: ftp, alt: 'Deploy', text: 'Ftp' },
+    { src: iis, alt: 'Deploy', text: 'Iis' }
 ]
 
-export const OsImageList:imagesType[] = [
-    {src:linux,alt:'Os',text:'Linux'},
-    {src:ubuntu,alt:'Os',text:'Ubuntu'},
-    {src:windows,alt:'Os',text:'Windows'}
+export const OsImageList: imagesType[] = [
+    { src: linux, alt: 'Os', text: 'Linux' },
+    { src: ubuntu, alt: 'Os', text: 'Ubuntu' },
+    { src: windows, alt: 'Os', text: 'Windows' }
 ]
 
-export const SoftwareImageList:imagesType[] = [
-    {src:csharp,alt:'Software',text:'C#'},
-    {src:dotnet,alt:'Software',text:'.NET'}
+export const SoftwareImageList: imagesType[] = [
+    { src: csharp, alt: 'Software', text: 'C#' },
+    { src: dotnet, alt: 'Software', text: '.NET' }
 ]
 
-export const TestImageList:imagesType[] = [
-    {src:jest,alt:'Test',text:'Jest'},
-    {src:sentry,alt:'Test',text:'Sentry'},
-    {src:jmeter,alt:'Test',text:''}
+export const TestImageList: imagesType[] = [
+    { src: jest, alt: 'Test', text: 'Jest' },
+    { src: sentry, alt: 'Test', text: 'Sentry' },
+    { src: jmeter, alt: 'Test', text: '' }
 ]
 
-export const VersionImageList:imagesType[] = [
-    {src:git,alt:'Version',text:'Git'},
-    {src:gitlab,alt:'Version',text:'Gitlab'},
-    {src:github,alt:'Version',text:'Github'},
-    {src:svn,alt:'Version',text:'Svn'}
+export const VersionImageList: imagesType[] = [
+    { src: git, alt: 'Version', text: 'Git' },
+    { src: gitlab, alt: 'Version', text: 'Gitlab' },
+    { src: github, alt: 'Version', text: 'Github' },
+    { src: svn, alt: 'Version', text: 'Svn' }
 ]
