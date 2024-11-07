@@ -43,3 +43,17 @@ $imagSize: 2rem;
     margin-bottom: 0rem;
   }
 }
+
+@media (max-width: 370px) {
+  .aboutme_basic_info_wrapper {
+    display: flex;
+    flex-flow: column wrap !important;
+    align-items: start;
+  }
+}
+
+@media (max-width: 350px) {
+  .aboutme_basic_info_text_name {
+    white-space: pre-line;
+  }
+}
