@@ -1,22 +1,28 @@
 $box-size: border-box;
-.skill_article{
-    background-color: #f9c51d;    
+.skill_article {
+  background-color: #f9c51d;
 }
 
-.skill_article_content{    
-    width: 100%;    
-    max-width: 78rem;
-    padding: 4rem 2rem;
-    margin: 0 auto;
-    height: 98rem;
-    -webkit-box-sizing: $box-size;
+.skill_article_content {
+  width: 100%;
+  max-width: 78rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  height: 98rem;
+  -webkit-box-sizing: $box-size;
 }
 
-.skill_basic_info{
-    display: flex;
-    flex-flow: column wrap;
-    overflow-x: scroll;
-    align-content: space-around;
-    height: calc(100% - (7.5rem + 1px));
+.skill_basic_info {
+  display: flex;
+  flex-flow: column wrap;
+  overflow-x: scroll;
+  align-content: space-around;
+  height: calc(100% - (7.5rem + 1px));
 }
 
+@media (max-width: 650px) {
+  .skill_article_content {
+    height: 61rem;
+    padding: 2rem 2rem;
+  }
+}
