@@ -26,3 +26,10 @@ $box-size: border-box;
     padding: 2rem 2rem;
   }
 }
+
+@media (max-width: 370px) {
+  .skill_article_content {
+    height: 51rem;
+    padding: 2rem 1rem 0.5rem 1rem;
+  }
+}
