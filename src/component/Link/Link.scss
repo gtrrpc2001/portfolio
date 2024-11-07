@@ -1,19 +1,27 @@
-$imagSize:2rem;
+$imagSize: 2rem;
 
-.section_title_link_wrapper .section_title_link{
-    position: absolute;
-    top: 50%;
-    &.changeTop{
-        top: 35%;
-    }
-    left: -3rem;
-    -webkit-transform: translateY(-50%);
-    width: $imagSize;   
-    height: $imagSize;
-    opacity: .5;
-    cursor: pointer;
+.section_title_link_wrapper .section_title_link {
+  position: absolute;
+  top: 50%;
+  &.changeTop {
+    top: 35%;
+  }
+  left: -3rem;
+  -webkit-transform: translateY(-50%);
+  width: $imagSize;
+  height: $imagSize;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
-.section_title_link:hover{
-    opacity: .7;
+.section_title_link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 400px) {
+  .section_title_link {
+    width: 25px !important;
+    height: 25px !important;
+    left: -2rem !important;
+  }
 }

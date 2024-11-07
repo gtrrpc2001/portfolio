@@ -1,36 +1,41 @@
-$imagSize:2rem;
-$fontWeight:700;
+$imagSize: 2rem;
+$fontWeight: 700;
 
-.aboutme_section_title{
-    display: table;
-    position: relative;
-    margin: 0 auto 3rem;
-    &.projectCSS{
-        margin: 0 auto;
-    }
+.aboutme_section_title {
+  display: table;
+  position: relative;
+  margin: 0 auto 3rem;
+  &.projectCSS {
+    margin: 0 auto;
+  }
 }
 
-.section_title_text{
-    color: #000000;
-    &.white{
-        color: #fff;
-        border-bottom-color:#fff;
-    }
-    border-bottom-color: #838282;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;    
-    font-weight: $fontWeight;
-    font-size: 3rem;
-    line-height: 1.5;
-}
-.section_title_text:hover{
-    cursor: default;
-}
-
-.aboutme_section_notice_title{
-    text-align: center;
-    font-size: 1rem;
+.section_title_text {
+  color: #000000;
+  &.white {
     color: #fff;
-    margin: 0 auto 3rem;
+    border-bottom-color: #fff;
+  }
+  border-bottom-color: #838282;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  font-weight: $fontWeight;
+  font-size: 3rem;
+  line-height: 1.5;
 }
-    
+.section_title_text:hover {
+  cursor: default;
+}
+
+.aboutme_section_notice_title {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 auto 3rem;
+}
+
+@media (max-width: 680px) {
+  .section_title_text {
+    font-size: 1.5rem;
+  }
+}

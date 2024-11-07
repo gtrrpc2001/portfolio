@@ -1,41 +1,86 @@
-$width:100%;
-$fontWeight:400;
-$imagSize:2rem;
+$width: 100%;
+$fontWeight: 400;
+$imagSize: 2rem;
 
-.aboutme_basic_info_wrapper_{
-    display: flex;
-    flex-flow: row nowrap;
-    width: $width;
-    max-width: 17rem;    
-    opacity: .8;
-    margin-left: 4.5rem;   
+.aboutme_basic_info_wrapper_ {
+  display: flex;
+  flex-flow: row nowrap;
+  width: $width;
+  max-width: 17rem;
+  opacity: 0.8;
+  margin-left: 4.5rem;
 }
 
-.aboutme_basic_info_wrapper__{
-    width: $imagSize;
-    min-width: $imagSize;
-    height: $imagSize;
-    margin-top: .2rem;
-    margin-right: 2rem;
+.aboutme_basic_info_wrapper__ {
+  width: $imagSize;
+  min-width: $imagSize;
+  height: $imagSize;
+  margin-top: 0.2rem;
+  margin-right: 2rem;
 }
 
-.aboutme_basic_info_img{
-    width: $width;
+.aboutme_basic_info_img {
+  width: $width;
 }
 
-.aboutme_basic_info_text_label{
-    margin-bottom: .5rem;
-    text-align:start;
-    font-weight: 700;
-    font-size: 1.25rem;
+.aboutme_basic_info_text_label {
+  margin-bottom: 0.5rem;
+  text-align: start;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
-.aboutme_basic_info_text_name{
-    font-weight: $fontWeight;
+.aboutme_basic_info_text_name {
+  font-weight: $fontWeight;
+  font-size: 1rem;
+}
+
+.link {
+  color: inherit;
+}
+
+@media (max-width: 1110px) {
+  .aboutme_basic_info_wrapper_ {
+    margin-left: 3rem;
+    max-width: 12rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutme_basic_info_wrapper_ {
+    margin-left: 0;
+    max-width: 9rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .aboutme_basic_info_wrapper_ {
+    margin-bottom: 0.8rem;
+  }
+
+  .aboutme_basic_info_text_label {
     font-size: 1rem;
-}
+    width: 80px;
+  }
 
-.link{
-    text-decoration: none;
-    color: inherit;
+  .aboutme_basic_info_text_name {
+    font-size: 0.85rem;
+    width: 200px;
+    text-align: start;
+    margin-bottom: 0.5rem;
+  }
+
+  .aboutme_basic_info_wrapper__ {
+    margin-right: 0.7rem;
+  }
+
+  .aboutme_basic_info_img {
+    width: 70% !important;
+  }
+
+  .aboutme_basic_info_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

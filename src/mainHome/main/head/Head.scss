@@ -1,70 +1,106 @@
-$fontWeight:400;
-$boderColoer:#f4623a;
-$color:#fff;
-$width:100%;
+$fontWeight: 400;
+$boderColoer: #f4623a;
+$color: #fff;
+$width: 100%;
 
-.head{
-    position: relative;
+.head {
+  position: relative;
 }
 
-.head::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: linear-gradient(180deg, rgba(112, 93, 80, .8) 0%, rgba(112, 93, 80, .8) 90%), url('../../../assets/image/masthead.jpg')50% no-repeat;        
-    background-size: cover;
-    z-index: -1;
+.head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(112, 93, 80, 0.8) 0%,
+      rgba(112, 93, 80, 0.8) 90%
+    ),
+    url("../../../assets/image/masthead.jpg") 50% no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
-.head_content{
-    width: $width;
-    max-width: 71.25rem;
-    margin: 0 auto;
-    padding: 8.5rem 2rem 4rem;
-    text-align: center;    
+.head_content {
+  width: $width;
+  max-width: 71.25rem;
+  margin: 0 auto;
+  padding: 8.5rem 2rem 4rem;
+  text-align: center;
 }
 
-.head_content_title{
-    font-family: Black Han Sans, sans-serif;
-    font-weight: $fontWeight;
-    font-size: 4rem;
-    color: $color;
-    word-break: keep-all;
+.head_content_title {
+  font-family: Black Han Sans, sans-serif;
+  font-weight: $fontWeight;
+  font-size: 4rem;
+  color: $color;
+  word-break: keep-all;
 }
 
-.head_content_divier{
-    width: 3.25rem;
-    height: 0;
-    margin: 1.5rem auto;
-    border: none;
-    border-top: .2rem solid $boderColoer;
+.head_content_divier {
+  width: 3.25rem;
+  height: 0;
+  margin: 1.5rem auto;
+  border: none;
+  border-top: 0.2rem solid $boderColoer;
 }
 
-.head_content_description{
-    margin: 0 auto 2rem;
-    font-weight: $fontWeight;
-    font-size: 1.25rem;
-    color: hsla(0, 0%, 100%, .75);
-    line-height: 1.5;
+.head_content_description {
+  margin: 0 auto 2rem;
+  font-weight: $fontWeight;
+  font-size: 1.25rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
 }
 
-.head_content_find-out-more{
-    display: inline-block;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 10rem;
-    background-color: $boderColoer;
-    font-weight: $fontWeight;
+.head_content_find-out-more {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10rem;
+  background-color: $boderColoer;
+  font-weight: $fontWeight;
+  font-size: 1rem;
+  text-decoration: none;
+  color: $color;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.head_content_find-out-more:hover {
+  background-color: #f54616;
+}
+
+@media (max-width: 768px) {
+  .head_content_title {
+    font-size: 2.5rem;
+  }
+
+  .head_content_description {
     font-size: 1rem;
-    text-decoration: none;
-    color: $color;
-    line-height: 1.5;
-    cursor: pointer;
+  }
+
+  .head_content_find-out-more {
+    font-size: 0.875rem;
+  }
 }
 
-.head_content_find-out-more:hover{
-    background-color: #f54616;
+@media (max-width: 550px) {
+  .head_content {
+    padding: 7rem 0 4rem;
+  }
+  .head_content_title {
+    font-size: 1.5rem;
+  }
+  .head_content_description {
+    font-size: 0.7rem;
+  }
+
+  .head_content_find-out-more {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.5rem;
+  }
 }
