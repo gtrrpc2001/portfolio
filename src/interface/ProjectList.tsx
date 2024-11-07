@@ -9,6 +9,7 @@ import {
 import { SpanColorText } from "../component/SpanColorText/SpanColorText";
 
 export interface ProjectList {
+  className?: string;
   title: string;
   time: string;
   people: number;
@@ -26,6 +27,7 @@ export interface ProjectList {
 
 export const Projects: ProjectList[] = [
   {
+    className: "EMR",
     title: "EMR",
     time: "21.03 ~ 22.09",
     people: 5,
@@ -58,6 +60,7 @@ export const Projects: ProjectList[] = [
   },
 
   {
+    className: "Ting",
     title: "Ting",
     time: "24.04 ~ ",
     people: 3,
@@ -81,11 +84,12 @@ export const Projects: ProjectList[] = [
     github: "https://github.com/gtrrpc2001/tingnest",
     frontend: "Flutter",
     backend: "Nest",
-    db: "Mysql,Redis,MongoDB",
+    db: "Mysql\n,Redis\n,MongoDB",
     deploy: "AWS (EC2)",
   },
 
   {
+    className: "admin",
     title: "관리자 웹",
     time: "23.12 ~ 24.01",
     people: 1,
@@ -114,6 +118,7 @@ export const Projects: ProjectList[] = [
   },
 
   {
+    className: "data",
     title: "데이터 분석",
     time: "24.10 ~ ",
     people: 2,

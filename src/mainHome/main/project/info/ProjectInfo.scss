@@ -1,19 +1,19 @@
-.project_info_wrapper{
-    display: flex;
-    margin-bottom: 1rem;    
+.project_info_wrapper {
+  display: flex;
+  margin-bottom: 1rem;
 }
 
-.project_value{
-    display: inline-block;
-    vertical-align: bottom;
-    width: calc(100% - 8.4rem);
-    font-weight: 400;
-    font-size: 1rem;
+.project_value {
+  display: inline-block;
+  vertical-align: bottom;
+  width: calc(100% - 8.4rem);
+  font-weight: 400;
+  font-size: 1rem;
 }
 
-.project_link{
-    color: #258ddb;
-    cursor: pointer;
-    text-decoration: none;
-    word-break: break-all;
+.project_link {
+  color: #258ddb;
+  cursor: pointer;
+  text-decoration: none;
+  word-break: break-all;
 }
