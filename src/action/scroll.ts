@@ -18,7 +18,7 @@ export const useScroll = ({ isMobile }: Props) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = isMobile ? window.scrollY > 170 && window.scrollY < 2520 || window.scrollY > 3200 : window.scrollY > 500;
+            const isScrolled = isMobile ? ((window.scrollY > 170 && window.scrollY < 2520) || window.scrollY > 3200) : window.scrollY > 500;
             setIsScrolled(isScrolled);
         };
 
