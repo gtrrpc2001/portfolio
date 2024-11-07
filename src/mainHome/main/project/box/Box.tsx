@@ -33,7 +33,7 @@ export const Box = ({
     <div key={m.id}>
       <img
         className={`${
-          (m.alt == "EMR" || m.alt == "admin") && !m.url.includes("adminWeb2")
+          (m.alt === "EMR" || m.alt === "admin") && !m.url.includes("adminWeb2")
             ? "projectImg"
             : ""
         }`}
