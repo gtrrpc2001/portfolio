@@ -1,21 +1,27 @@
-.Introduction_List{
-    padding-left: 1rem;
+.Introduction_List {
+  padding-left: 1rem;
 }
 
-.introduction_title{    
-    margin: 2rem 0 1rem -1rem;
-    color: #222;
-    font-weight: 700;
-    line-height: normal;
+.introduction_title {
+  margin: 2rem 0 1rem -1rem;
+  color: #222;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.introduction_period{
-    margin: 0 0 1rem -1rem;
-    font-size: .9rem;
-    font-weight: 400;
-    color: #6c757d;
+.introduction_period {
+  margin: 0 0 1rem -1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #6c757d;
 }
 
-.introduction_li{
-    margin-bottom: .5rem;
+.introduction_li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 650px) {
+  .Introduction_List {
+    list-style: none;
+  }
 }

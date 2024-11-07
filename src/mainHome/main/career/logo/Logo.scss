@@ -1,24 +1,32 @@
-.career_logo_container{
-    padding-right: 3rem;
-    border-right: 1px solid #ccc;
+.career_logo_container {
+  padding-right: 3rem;
+  border-right: 1px solid #ccc;
 }
 
-.career_logo_wrapper{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    -webkit-box-align: center;
-    overflow: hidden;
-    width: 15rem;
-    height: 15rem;
-    border: 1px solid #ccc;
-    border-radius: 10rem;
-    background-color: #fff;
+.career_logo_wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  -webkit-box-align: center;
+  overflow: hidden;
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid #ccc;
+  border-radius: 10rem;
+  background-color: #fff;
 }
 
-.career_logo{
-    display: block;
-    flex-shrink: 0;
-    width: 90%;
-    margin-left: .5rem;
+.career_logo {
+  display: block;
+  flex-shrink: 0;
+  width: 90%;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 650px) {
+  .career_logo_container {
+    border-right: 0px solid #ccc;
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
 }

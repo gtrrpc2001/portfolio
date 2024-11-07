@@ -1,5 +1,13 @@
-.career_company{
-    display: flex;
-    flex-flow: row nowrap;
-    -webkit-box-pack: center;
+.career_company {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+}
+
+@media (max-width: 650px) {
+  .career_company {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
